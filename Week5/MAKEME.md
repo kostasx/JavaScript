@@ -1,6 +1,6 @@
 ## Homework Week 5
 
->[Here](https://github.com/HackYourFuture/JavaScript/tree/master/Week5/README.md) you find the readings you have to complete before the sixth lecture.
+>[Here](https://github.com/SocialHackersCodeSchool/SocialHackersCodeSchool/tree/master/Week5/README.md) you find the readings you have to complete before the sixth lecture.
 
 ### Step 0
 All share a video or a resource (this can be a drawing, article or a pod cast) that was helpful for you the last few weeks with learning JavaScript. Please share this in the channel of your class in Slack. Also write as small note about what the resource i about and why you think it's so helpful (you can share more than one if you like).
@@ -95,18 +95,18 @@ Make a website that fetches (= to get) data asynchronously.
 
 2) Add a button (e.g. 'click me') that when clicked `console.logs` 'you clicked me!'
 
-3) Create a function that fetches from [The Github API](https://developer.github.com/v3/). For example from [this page] (https://api.github.com/orgs/HackYourFuture/repos) (the one we used last week). For help on this check this [SO post](https://stackoverflow.com/questions/247483/http-get-request-in-javascript)
+3) Create a function that fetches from [The Github API](https://developer.github.com/v3/). For example from [this page] (https://api.github.com/orgs/SocialHackersCodeSchool/repos) (the one we used last week). For help on this check this [SO post](https://stackoverflow.com/questions/247483/http-get-request-in-javascript)
 
 4) Display the data that you get from the Github API on your web page.
 
 5) Now link the two together: When you click the button -> get the data from the Github API and display it on your website
 
-6) Make all the repositories link their own page in Github. Use the value of the key: `name` to make this work (hint: Github urls always look like this https://api.github.com/repos/HackYourFuture/[repositoryName] where [repositoryName] would be replaced by the actual `name` of the repository, for example `CommandLine`). Make sure the link opens in a new tab.
+6) Make all the repositories link their own page in Github. Use the value of the key: `name` to make this work (hint: Github urls always look like this https://api.github.com/repos/SocialHackersCodeSchool/[repositoryName] where [repositoryName] would be replaced by the actual `name` of the repository, for example `CommandLine`). Make sure the link opens in a new tab.
 
 7) BONUS: if you look at this:
 
 ```js
-https://api.github.com/repos/HackYourFuture/CommandLine
+https://api.github.com/repos/SocialHackersCodeSchool/CommandLine
 ```
 
 You can see `CommandLine` in the URL. These are called "query parameters" and let us specify in detail what we want from the API. Play around with this. For example you can make two buttons that either get data for a specific repository, JavaScript or Node.js. Or go even more crazy and make users type in a search box 'JavaScript' and then send that to the API by changing the repository.
@@ -126,12 +126,12 @@ You can see `CommandLine` in the URL. These are called "query parameters" and le
 
 ```
 How to hand in your homework:
-• Clone your existing "hyf-javascript2" Github repository.
+• Clone your existing "sha-javascript2" Github repository.
 • Create a new folder "week2" USING THE COMMAND LINE 
 • Save your homework files inside this folder. 
 • When you are done with your homework use add/commit and push to upload your homework. 
 • Write a description for your “commit”.
-• Your hyf-javascript2/week2 should now contain all your homework files.
+• Your sha-javascript2/week2 should now contain all your homework files.
 Place the link to your repository folder in Trello.
 ```
 
