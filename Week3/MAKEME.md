@@ -56,7 +56,7 @@ And just for fun ... https://www.freecodecamp.com/challenges/sum-all-numbers-in-
 the Bonus homework for this week (for those of you want an extra challenge) do the following:
 
 - Sign up on codewars.com
-- In you account setting under “clan” write “Hack Your Future” 
+- In you account setting under “clan” write “Social Hackers Academy” 
 - Go do the challenges in the following playlist: https://www.codewars.com/collections/fun-fun-fundamentals
 
 Codewars is really a lot of fun, and you can compete against each other who has the most points :trollface:
