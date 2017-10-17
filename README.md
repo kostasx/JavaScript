@@ -1,6 +1,6 @@
 >Please help us improve and share your feedback! If you find better tutorials or links, please share them by opening a Pull Request.
 
-# HackYourJavaScript
+# Social Hacking Javascript
 
 <!-- **Class 10: please visit this [link](https://github.com/SocialHackersCodeSchool/JavaScript/tree/master) (your specific branch "master") for the most recent information relevant to your class.** -->
 
