@@ -14,11 +14,7 @@ Your fellow students have provided you with feedback in Trello. Your teachers ha
 - Implement both feedback from Trello and Github.
 - Check on one of your fellow students code and issues and see if her or she implemented their feedback correctly. If there are some things that can be improved make an issue suggesting further improvements. If you think that the feedback has been implemented correctly create a issue saying something like: "nice work you can clear your issues".
 
-## Step 2: Reorganize your Github 
-
-Your Github should contain two repositories called hyf-javascript1 and hyf-commandline . Inside the JavaScript repository you should have three folders, called week1, week2, and week3 (or something similar). Inside these folders you should have the different assignments (a file per exercises). Ty and find proper names for the exercises that reflect somehow what is going on in the code. Avoid using spaces in your file names, this makes it harder to "run" you files. Also make sure that all your JavaScript files have a .js extension.
-
-## Step 3: Custom DOM manipulation challenge :mortar_board:
+## Step 2: Custom DOM manipulation challenge :mortar_board:
 
 1. Open a new js file and start by declaring an array that contains 10 strings. These strings should be of book titles you have read (or made up) and be lowercase without spaces or special characters so that you can use these later as Id's. (Example: Harry Potter's - The Chamber of Secrets -> `harry_potter_chamber_secrets`). 
 
