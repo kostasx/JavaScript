@@ -38,7 +38,7 @@ How to hand in your homework:
 • Place the link to your repository folder in Trello.
 ```
 
-## Step 4: **FreeCodeCamp challenges:**
+## Step 3: **FreeCodeCamp challenges:**
 
 - https://www.freecodecamp.com/challenges/declare-javascript-objects-as-variables
 - https://www.freecodecamp.com/challenges/make-instances-of-objects-with-a-constructor-function
