@@ -9,9 +9,6 @@ This review covers:
 • Code commenting
 ```
 
-## More CLI
-Check out the CLI review here: https://github.com/HackYourFuture/CommandLine/blob/master/Lecture-2.md
-
 ## Scope, closures and 'this'
 Scope, closure and 'this' are about *context*. 
 
