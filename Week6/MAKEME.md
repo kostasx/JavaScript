@@ -22,7 +22,7 @@ Make a website that fetches (= to get) data asynchronously.
 
 2) Add a button (e.g. 'click me') that when clicked `console.logs` 'you clicked me!'
 
-3) Create a function that fetches from [The Github API](https://developer.github.com/v3/). For example from [this page] (https://api.github.com/orgs/HackYourFuture/repos). For help on this check this [SO post](https://stackoverflow.com/questions/247483/http-get-request-in-javascript)
+3) Create a function that fetches from [The Github API](https://developer.github.com/v3/). For example from [this page] (https://api.github.com/orgs/SocialHackersCodeSchool/repos). For help on this check this [SO post](https://stackoverflow.com/questions/247483/http-get-request-in-javascript)
 
 4) Display the data that you get from the Github API on your web page.
 
@@ -33,12 +33,12 @@ Cool we are back where we left of.
 6) Take a look at this:
 
 ```js
-https://api.github.com/repos/HackYourFuture/CommandLine
+https://api.github.com/repos/SocialHackersCodeSchool/CommandLine
 ```
 
-7) Make a function which takes a single argument. The function should make an XHR request to `https://api.github.com/repos/HackYourFuture/[SearchTerm]` where the search term will be the argument. This argument will be the input the user has given you, so make sure that when the user clicks the button you call this function with the argument. 
+7) Make a function which takes a single argument. The function should make an XHR request to `https://api.github.com/repos/SocialHackersCodeSchool/[SearchTerm]` where the search term will be the argument. This argument will be the input the user has given you, so make sure that when the user clicks the button you call this function with the argument. 
 
-8) Make all the repositories link their own page in Github. Use the value of the key: `name` to make this work (hint: Github urls always look like this https://api.github.com/repos/HackYourFuture/[repositoryName] where [repositoryName] would be replaced by the actual `name` of the repository, for example `CommandLine`). Make sure the link opens in a new tab.
+8) Make all the repositories link their own page in Github. Use the value of the key: `name` to make this work (hint: Github urls always look like this https://api.github.com/repos/SocialHackersCodeSchool/[repositoryName] where [repositoryName] would be replaced by the actual `name` of the repository, for example `CommandLine`). Make sure the link opens in a new tab.
 
 - Make sure you handle user input well. That means you need to think about empty input, and input that doesn't yield any results.
 
@@ -69,33 +69,13 @@ So for example, we have teams in our organization. You can find out who are in t
 
 Anyway, endless fun and possibilities. Need inspiration, check out the Github API documentation. Oh and please make it look nice (hint: use the stuff you learned in HTML/CSS)!
 
-
-### Step 4: Git branching homework
-
-1) Use the unmeshvrije/MyFirst repository (the one you cloned) for this homework.
-
-2) Make a branch.
-
-3) Name it YOUR-GITHUB-NAME-dev
-
-4) Create a file commands.txt in your branch.
-
-5) Add bash commands that you have learnt with descriptions
-
-6) Then git add, commit and push them in a remote branch.
-
-**Do not merge the changes to master branch.
-
-** Do not make any changes to master branch.
-
-
 __Bonus__: Write a function takes this array `['a', 'b', 'c', 'd', 'a', 'e', 'f', 'c']` and returns an array which only has unique values in it (so it removes the duplicate ones). Make it a 'smart' algorithm that could do it for every array (only strings/number). Try to make it as fast as possible!
 
 
 ```
 How to hand in your homework:
-• Upload your homework in your "hyf-javascript2" Github repository. Make sure to create a new folder "week3" first. 
+• Upload your homework in your "sha-javascript2" Github repository. Make sure to create a new folder "week3" first. 
 • Upload your homework files inside the week3 folder and write a description for this “commit”.
-• Your hyf-javascript2/week3 should now contain an index.html, main.css and a script.js file (and the images folder)
+• Your sha-javascript2/week3 should now contain an index.html, main.css and a script.js file (and the images folder)
 • Place the link to your repository folder in Trello.
 ```
