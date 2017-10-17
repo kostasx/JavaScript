@@ -47,9 +47,9 @@ Notes:
 :octocat: 
 ```
 How to hand in your homework:
-• Create a new repository "hyf-javascript2". Also create a new folder "week1" inside this repository. 
+• Create a new repository "sha-javascript2". Also create a new folder "week1" inside this repository. 
 • Upload your homework files inside the week1 folder and write a description for this “commit”.
-• Your hyf-javascript2/week1 should now contain the files of your homework.
+• Your sha-javascript2/week1 should now contain the files of your homework.
 • Place the link to your repository folder in Trello.
 ```
 
