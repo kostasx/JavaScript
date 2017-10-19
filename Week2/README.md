@@ -2,7 +2,6 @@
 
 ```
 In week three we will discuss the following topics:
-• CLI (Command Line Interface)
 • Closures 
 • Scope
 • Array Manipulations 
