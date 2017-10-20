@@ -5,6 +5,7 @@
 
 ```
 In week five we will discuss the following topics:
+• Json
 • Events
 • Callbacks
 • XHTTP Requests
