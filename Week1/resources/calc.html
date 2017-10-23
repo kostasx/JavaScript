@@ -1,0 +1,124 @@
+<!DOCUMENT html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>calc</title>
+
+  <style>
+    #keyboard {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      width: 40%;
+      height: 52%;
+      margin-left: auto;
+      margin-right: auto;
+      margin-top: 2.5%;
+      background-color: grey;
+      border-style: solid;
+      border-color: black;
+      /*border-width: 3px;*/
+      justify-content: center;
+    }
+    .keyboard-key {
+      flex: 1 0 32% ;
+      border-style: solid;
+      border-color: black;
+      border-right-width: 1px;
+      border-left-width: 1px;
+      border-bottom-width: 1px;
+      border-top-width: 1px;
+      width: 31%;
+      text-align: center;
+    }
+    .keyboard-key > .key-text {
+      margin-top: 100%;
+      margin-bottom: 100%;
+      margin: 0 auto;
+      /*height: 100%;*/
+      vertical-align: middle;
+    }
+    #output {
+      border-style: solid;
+      border-color: black;
+      border-width: 3px;
+      width: 40%;
+      height: 7.5%;
+      margin-left: auto;
+      margin-right: auto;
+      margin-top: 15%;
+    }
+
+  </style>
+
+</head>
+
+<body>
+
+  <main>
+    <div id="output"></div>
+    <section id="keyboard">
+      <div class="keyboard-key">
+        <span class="key-text">1</span>
+      </div>
+      <div class="keyboard-key"><span class="key-text">2</span></div>
+      <div class="keyboard-key"><span class="key-text">3</span></div>
+      <div class="keyboard-key"><span class="key-text">4</span></div>
+      <div class="keyboard-key"><span class="key-text">5</span></div>
+      <div class="keyboard-key"><span class="key-text">6</span></div>
+      <div class="keyboard-key"><span class="key-text">7</span></div>
+      <div class="keyboard-key"><span class="key-text">8</span></div>
+      <div class="keyboard-key"><span class="key-text">9</span></div>
+      <div class="keyboard-key operation"><span class="key-text">+</span></div>
+      <div class="keyboard-key operation"><span class="key-text">-</span></div>
+      <div class="keyboard-key operation"><span class="key-text">*</span></div>
+      <div class="keyboard-key operation"><span class="key-text">/</span></div>
+      <div id="plus-minus" class="keyboard-key"><span class="key-text">+/-</span></div>
+      <div class="keyboard-key process"><span class="key-text">=</span></div>
+    </section>
+
+    <script>
+
+      let tot =  0 ;
+      document.querySelectorAll('.keyboard-key').forEach (function (key) {
+
+        console.log (key.textContent) ;
+        key.onclick = function (key) {
+
+          document.querySelector ('#output').textContent += ' ' + key.target.textContent ;
+          console.log (key) ;
+        } ;
+      }) ;
+
+      document.querySelector('#plus-minus').onclick = function (key) {
+
+        document.querySelector ('#output').textContent += ' -' ;
+        console.log (key) ;
+      } ;
+
+      function calculate (numbers) {
+
+        for (let i = 0; i < numbers.length; i++) {
+
+          tot = tot + numbers [i] ;
+        }
+
+        return tot ;
+      }
+
+      function print () {
+
+        document.querySelector('#output').textContent = tot ;
+      }
+
+      document.querySelector('.process').onclick = function (key) {
+
+        document.querySelector ('#output').textContent = tot ;
+        console.log (key) ;
+      } ;
+
+    </script>
+
+</body>
+
+</html>
