@@ -33,7 +33,7 @@ For example:
 
 ### Step 2: **Some freeCodeCamp challenges (10 hours):**
 
-On freeCodeCamp.com please do the [Basic JavaScript](https://www.freecodecamp.com/challenges/learn-how-free-code-camp-works) exercises up and until the __"Shopping List"__ exercise (there are some topics we did not cover but you can do it).
+On freeCodeCamp.com please do the [Basic JavaScript](https://www.freecodecamp.org/map) exercises up and until the __"Shopping List"__ exercise (there are some topics we did not cover but you can do it).
 
 ### How to hand in Homework:
 ```
