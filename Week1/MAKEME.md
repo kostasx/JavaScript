@@ -1,6 +1,6 @@
 ## Homework week 1:
 
->[Here](https://github.com/HackYourFuture/JavaScript/tree/master/Week1/README.md) you find the readings you have to complete before the second lecture.
+>[Here](https://github.com/SocialHackersCodeSchool/JavaScript/tree/master/Week1/README.md) you find the readings you have to complete before the second lecture.
 
 ## Before you start with the homework:
 
