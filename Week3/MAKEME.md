@@ -11,7 +11,7 @@
 
 Your teachers have provided you with feedback in issues in Github. 
 
-- Implement both feedback Github.
+- Implement feedback from Github
 - Check on one of your fellow students code and issues and see if her or she implemented their feedback correctly. If there are some things that can be improved make an issue suggesting further improvements. If you think that the feedback has been implemented correctly create a issue saying something like: "nice work you can clear your issues".
 
 ## Step 2: Custom DOM manipulation challenge :mortar_board:
