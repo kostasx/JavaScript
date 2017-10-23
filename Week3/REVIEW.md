@@ -2,15 +2,14 @@
 
 ```
 This review covers:
-• More CLI
-• Scope, closures and 'this'
+• Closures and 'this'
 • Array Manipulations 
 • Basic DOM manipulations
 • Code commenting
 ```
 
 ## Scope, closures and 'this'
-Scope, closure and 'this' are about *context*. 
+Closure and 'this' are about *context*. 
 
 This post explains things really well: [Recommended read by Todd Motto on Scope](https://toddmotto.com/everything-you-wanted-to-know-about-javascript-scope/)
 
