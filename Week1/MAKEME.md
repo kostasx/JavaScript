@@ -2,8 +2,6 @@
 
 >[Here](https://github.com/HackYourFuture/JavaScript/tree/master/Week1/README.md) you find the readings you have to complete before the second lecture.
 
-We covered a bit of command line usage in the first class and got a program running which is great. If you need a refresher for the command line please have a look here: https://github.com/SocialHackersCodeSchool/CommandLine
-
 ## Before you start with the homework:
 
 1. Watch: [What is programming](https://www.khanacademy.org/computing/computer-programming/programming/intro-to-programming/v/programming-intro) Just watch the 2 min video, you do not have to do the entire JavaScript course (It could be useful later on though). 
@@ -22,7 +20,7 @@ We covered a bit of command line usage in the first class and got a program runn
 
 5. Write a program that checks the types of two variables and prints out `SAME TYPE` if they are the same type. 
 For example: 
-    ```js
+    
     let x = 9;
     let y = 'Hello';
 
@@ -30,7 +28,6 @@ For example:
       console.log('SAME TYPE');
     }
 
-    ```
 
 6. If `x` equals 7, and the only other statement is `x = x % 3`, what would be the new value of `x`?
 
