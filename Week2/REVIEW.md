@@ -33,7 +33,7 @@ This review covers:
 |0|0|1|
 |1|1|1|
 
-So you can say that false in combination with `&&` always returns true
+So you can say that false in combination with `&&` always returns false
 ```js
 true && false //-> false
 false && true //-> false
