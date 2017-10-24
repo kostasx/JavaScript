@@ -37,5 +37,3 @@ A web app with external data source using at least one API 《〠_〠》
 
 ### Overall
 A good understanding of all the above mentioned topics. Want to check your Knowledge? Go through the [JavaScript Fundamentals README](https://github.com/SocialHackersCodeSchool/JavaScript/tree/master/fundamentals) and research/ ask for help (Slack!) with the concepts that are not entirely clear.
-
-
