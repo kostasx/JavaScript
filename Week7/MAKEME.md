@@ -2,26 +2,22 @@
 
 >[Here](https://github.com/HackYourFuture/JavaScript/tree/master/Week7/README.md) you find the readings you have to complete before the eighth lecture.
 
-## Step 1: Git Homework
-
-[Make these assignments](https://github.com/HackYourFuture/Git/blob/master/Lecture-3.md). For handing in homework follow the Forking workflow that is described  in our lecture-3.md  file of HackYourFuture’s Git repository (there is also a video that explains this).
-
-## Step 2: Give feedback on Step 3 and 4 of last weeks homework.
+## Step 1: Give feedback on Step 3 and 4 of last weeks homework.
 
 Give feedback on the SPA (Github API) and git branching homework of one of you fellow students. Please provide the feedback in an issue.
 
-## Step 3: Issues
+## Step 2: Issues
 
 - Solve all your Git issues. DO NO CLOSE AN ISSUE WITHOUT AN EXPLANATION OR CODE COMMIT REFERENCING THAT ISSUE. 
 
-## Step 4: map, filter, reduce
+## Step 3: map, filter, reduce
 
 - Add map, filter, reduce to  your existing app to build an application that loads data from github, filters out based on certain value, map->reduces to a data object and render that object to the dom (using map again).
 - For example you can try to use map, filter and reduce to show the most and the least forked repositories, watched repositories. And the total number of forks for all repo's. Also you can work with the data provided about the amount of commits or contributers.
 <!-- - Add polling to your app so that it checks every minute or so if a new repo has been made and if it has, adds it to the DOM without reloading the page. -->
 - Add a readme to your repo explaining  what your app does and how to use your app. Here's a [template](https://gist.github.com/jxson/1784669) and here you can see how to make [your readme awesome](https://gist.github.com/rrgayhart/91bba7bb39ea60136e5c).
 
-### Step 5: **Some freeCodeCamp challenges:**
+### Step 4: **Some freeCodeCamp challenges:**
 
 1. [Comparisons with the Logical And Operator](https://www.freecodecamp.com/challenges/comparisons-with-the-logical-and-operator)
 
@@ -145,7 +141,7 @@ Remember the person with the most kata points gets a prize from Gijs (and you ca
 1. [Stacks/Queues](https://www.youtube.com/watch?v=wjI1WNcIntg) (5 mins)
 2. [JS Event Loops](https://www.youtube.com/watch?v=8aGhZQkoFbQ) (26 mins, watch this one twice or until you understand it)
 
->Create a new repository "hyf-javascript3". Also create a new folder "week1" inside this repository. 
+>Create a new repository "sha-javascript3". Also create a new folder "week1" inside this repository. 
 Upload your homework files inside the week1 folder and write a description for this “commit”.
-Your hyf-javascript3/week1 should now contain the files of your homework.
+Your sha-javascript3/week1 should now contain the files of your homework.
 Place the link to your repository folder in Trello.
