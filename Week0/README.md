@@ -2,7 +2,6 @@
 
 ```
 In week one we will discuss the following topics:
-• The first part of the day Unmesh will talk about CLI (Command Line Interface)
 • Intro JavaScript (What is it, where can you use it for)
 • Variables [var, let, const]
 • Basic Data types [Strings, Numbers, Arrays]
