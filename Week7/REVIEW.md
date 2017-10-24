@@ -2,8 +2,7 @@
 
 ```
 This review covers:
- • Git Workflow
- • Map, 
+ • Map
  • Reduce 
  • Filter
 ```
