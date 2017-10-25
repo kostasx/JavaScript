@@ -3,7 +3,6 @@
 ```
 In week six we will discuss the following topics:
 • Async VS Sync
-• Polling
 • Structure for a basic SPA
 • There is a TEST the second part of the day
 ```
