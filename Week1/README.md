@@ -10,8 +10,13 @@ In week two we will discuss the following topics:
 • Naming conventions
 ```
 
-### Here are resources that we like you to read as a preparation for the coming lecture:
+### Here are resources that we like you to read and watch as a preparation for the coming lecture:
 
+Watch these videos to solidify understanding of arrays and strings (from last unit): 
+https://www.khanacademy.org/computing/computer-programming/programming/arrays/p/intro-to-arrays
+https://www.youtube.com/watch?v=eghr0_XS5HQ
+
+Material to read:
 - 'Loops' of [_A Smarter Way To Learn JavaScript_](https://github.com/Sharique-Hasan/SaylaniBatch2-JavaScript/blob/master/A%20Smarter%20Way%20to%20Learn%20JavaScript.pdf) : Chapters 18-20
 - 'Functions' of [_A Smarter Way To Learn JavaScript_](https://github.com/Sharique-Hasan/SaylaniBatch2-JavaScript/blob/master/A%20Smarter%20Way%20to%20Learn%20JavaScript.pdf) : Chapters 35 - 38
 - Functions ~ http://eloquentjavascript.net/03_functions.html
