@@ -13,7 +13,10 @@ In week four we will discuss the following topics:
 ### Here are resources that we like you to read as a preparation for the coming lecture. 
 
 - [JSON](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/JSON) (MDN)
+- [JSON Video](https://www.youtube.com/watch?v=sSL2to7Jg5g)
+
 - Chrome DevTools [Debugging](https://developers.google.com/web/tools/chrome-devtools/?utm_source=dcc&utm_medium=redirect&utm_campaign=2016q3) 
+- Chrome DevTools [Video](https://www.youtube.com/watch?v=zv_aOlH8S_o)
 
 ### A Refresher from some previous covered topics:
 
