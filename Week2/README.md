@@ -10,7 +10,8 @@ In week three we will discuss the following topics:
 
 ### Here are resources that we like you to read as a preparation for the coming lecture. 
 
-- [Array](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/prototype)
+- [Common Array Methods Video] (https://www.youtube.com/watch?v=MeZVVxLn26E)
+- [All of the array methods] (https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/prototype)
 
 Refresher:
 * Objects (*important to really understand them, read this if you are unsure! You may also read chapters 72, 73 and 74 if you have time and want to learn more*):</br>
