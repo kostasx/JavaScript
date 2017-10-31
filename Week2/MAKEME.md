@@ -4,13 +4,17 @@
 
 ## Step 1: Recap/Read
 
-- Have a look at [The Secret Life of JavaScript Primitives](https://javascriptweblog.wordpress.com/2010/09/27/the-secret-life-of-javascript-primitives/)
+- Have a look at [The Secret Life of JavaScript Primitives](https://www.youtube.com/watch?v=2ZUDcmWW4Hc)
 - Go through the review of [last week](https://github.com/SocialHackersCodeSchool/JavaScript/blob/master/Week1/REVIEW.md) (Work in progress, update this week :wrench:)
 - Go through the review of [this week](https://github.com/SocialHackersCodeSchool/JavaScript/blob/master/Week2/REVIEW.md) (work in progress, update this week :nut_and_bolt:)
 
 ## Step 2: Watch
 
 1. If you haven't done already, watch: [What is programming](https://www.khanacademy.org/computing/computer-programming/programming/intro-to-programming/v/programming-intro) Just watch the 2 min video, you do not have to do the entire JavaScript course (It could be useful later on though). 
+
+2. If you want a refresher on Functions you should see [this video](https://www.youtube.com/watch?v=5nuqALOHN1M).
+
+3. If you want a refresher on Objects you should see [this video](https://www.youtube.com/watch?v=mgwiCUpuCxA)
 
 ## Step 3: JavaScript
 > For all the following exercises create a new .js file. Try to find a proper name for each file or make a small comment about what it does inside for future reference
