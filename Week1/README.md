@@ -17,6 +17,8 @@ https://www.khanacademy.org/computing/computer-programming/programming/arrays/p/
 https://www.youtube.com/watch?v=eghr0_XS5HQ
 
 Material to read:
+- 'Loops and iteration' at [MDN] https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Loops_and_iteration
+- 'Functions' at [MDN] https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Functions
 - 'Loops' of [_A Smarter Way To Learn JavaScript_](https://github.com/Sharique-Hasan/SaylaniBatch2-JavaScript/blob/master/A%20Smarter%20Way%20to%20Learn%20JavaScript.pdf) : Chapters 18-20
 - 'Functions' of [_A Smarter Way To Learn JavaScript_](https://github.com/Sharique-Hasan/SaylaniBatch2-JavaScript/blob/master/A%20Smarter%20Way%20to%20Learn%20JavaScript.pdf) : Chapters 35 - 38
 - Functions ~ http://eloquentjavascript.net/03_functions.html
