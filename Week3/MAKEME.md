@@ -44,6 +44,11 @@ How to hand in your homework:
 - https://www.freecodecamp.com/challenges/make-instances-of-objects-with-a-constructor-function
 - https://www.freecodecamp.com/challenges/make-unique-objects-by-passing-parameters-to-our-constructor
 - https://www.freecodecamp.com/challenges/make-object-properties-private
+- https://www.freecodecamp.com/challenges/multiply-two-decimals-with-javascript
+- https://www.freecodecamp.com/challenges/store-multiple-values-in-one-variable-using-javascript-arrays
+- https://www.freecodecamp.com/challenges/build-javascript-objects
+- https://www.freecodecamp.com/challenges/add-new-properties-to-a-javascript-object
+- https://www.freecodecamp.com/challenges/delete-properties-from-a-javascript-object
 
 
 And just for fun ... https://www.freecodecamp.com/challenges/sum-all-numbers-in-a-range
