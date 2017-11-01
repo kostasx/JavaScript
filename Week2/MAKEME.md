@@ -129,16 +129,6 @@ typeof typeof bar;
  
 > ‘Coerce' means to try to change - so coercing `var x = '6'` to number means trying to change the type to number temporarily. 
 
-## Step 4: **Finish basic freeCodeCamp challenges:**
-
-Go back to FreeCodeCamp, start where you left of and finish the rest of the Basic JavaScript challenges.
-
-Please make sure you REALLY understand the exercises below:
-- https://www.freecodecamp.com/challenges/multiply-two-decimals-with-javascript
-- https://www.freecodecamp.com/challenges/store-multiple-values-in-one-variable-using-javascript-arrays
-- https://www.freecodecamp.com/challenges/build-javascript-objects
-- https://www.freecodecamp.com/challenges/add-new-properties-to-a-javascript-object
-- https://www.freecodecamp.com/challenges/delete-properties-from-a-javascript-object
 
 ```
 How to hand in your homework:
