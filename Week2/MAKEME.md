@@ -51,11 +51,6 @@ if (3 == 3) {
 What do you think will happen with `x == y`, `x === y` and `z == y` and `z == x`? Prove it!
     
 > Don't cheat! Seriously - try it first.
-    
-
-Check out this [Fiddle](http://jsfiddle.net/jimschubert/85M4z/). You need to open your browser’s Developer Tools to see the console output. Press the Run button in the upper right corner to run the code.
-
-More insights from this [Stack Overflow question](http://stackoverflow.com/questions/22395357/how-to-compare-two-arrays-are-equal-using-javascript).
 
 12. What does the following code return? (And why?)
 ```js
