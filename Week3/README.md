@@ -4,7 +4,7 @@
 In week four we will discuss the following topics:
 • JSON
 • Code debugging using the browser
-• Functions + JSON/Arrays
+• JSON/Arrays
 • Code flow (order of execution)
 • (capturing user input)
 • Structuring code files
