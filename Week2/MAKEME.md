@@ -10,7 +10,11 @@
 
 3. If you want a refresher on Objects you should see [this video](https://www.youtube.com/watch?v=mgwiCUpuCxA)
 
-## Step 2: JavaScript
+## Step 2: **Some freeCodeCamp challenges (10 hours):**
+
+On freeCodeCamp.com please do the [Basic JavaScript](https://www.freecodecamp.org/map) exercises up and until the __"Shopping List"__ exercise (there are some topics we did not cover but you can do it).
+
+## Step 3: JavaScript
 > For all the following exercises create a new .js file. Try to find a proper name for each file or make a small comment about what it does inside for future reference
 
 1. Create a function that takes 3 arguments and returns the sum of the three arguments.
@@ -60,10 +64,6 @@ typeof typeof bar;
 
  
 > ‘Coerce' means to try to change - so coercing `var x = '6'` to number means trying to change the type to number temporarily. 
-
-### Step 3: **Some freeCodeCamp challenges (10 hours):**
-
-On freeCodeCamp.com please do the [Basic JavaScript](https://www.freecodecamp.org/map) exercises up and until the __"Shopping List"__ exercise (there are some topics we did not cover but you can do it).
 
 ```
 How to hand in your homework:
