@@ -14,7 +14,7 @@ On freeCodeCamp.com please do the [Basic JavaScript](https://www.freecodecamp.or
 
 1. Declare a variable `x` and initialize it with an integer.
 
-2. How do you round the number 7.25, to the nearest integer?
+2. How do you round the number 7.25, to the nearest whole number?
 
 3. Create a array called `colors` with the strings red, green and blue inside.
 
