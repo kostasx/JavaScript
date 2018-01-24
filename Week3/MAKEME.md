@@ -14,7 +14,19 @@ Your teachers have provided you with feedback in issues in Github.
 - Implement feedback from Github
 - Check on one of your fellow students code and issues and see if her or she implemented their feedback correctly. If there are some things that can be improved make an issue suggesting further improvements. If you think that the feedback has been implemented correctly create a issue saying something like: "nice work you can clear your issues".
 
-## Step 2: Custom DOM manipulation challenge :mortar_board:
+## Step 2: **FreeCodeCamp challenges:**
+
+- https://www.freecodecamp.com/challenges/declare-javascript-objects-as-variables
+- https://www.freecodecamp.com/challenges/make-instances-of-objects-with-a-constructor-function
+- https://www.freecodecamp.com/challenges/make-unique-objects-by-passing-parameters-to-our-constructor
+- https://www.freecodecamp.com/challenges/make-object-properties-private
+- https://www.freecodecamp.com/challenges/multiply-two-decimals-with-javascript
+- https://www.freecodecamp.com/challenges/store-multiple-values-in-one-variable-using-javascript-arrays
+- https://www.freecodecamp.com/challenges/build-javascript-objects
+- https://www.freecodecamp.com/challenges/add-new-properties-to-a-javascript-object
+- https://www.freecodecamp.com/challenges/delete-properties-from-a-javascript-object
+
+## Step 3: Custom DOM manipulation challenge :mortar_board:
 
 1. Open a new js file and start by declaring an array that contains 10 strings. These strings should be of book titles you have read (or made up) and be lowercase without spaces or special characters so that you can use these later as Id's. (Example: Harry Potter's - The Chamber of Secrets -> `harry_potter_chamber_secrets`). 
 
@@ -37,15 +49,6 @@ How to hand in your homework:
 • Your sha-javascript1/week3 should now contain an index.html, main.css and a script.js file (and the images folder)
 • Place the link to your repository folder in Trello.
 ```
-
-## Step 3: **FreeCodeCamp challenges:**
-
-- https://www.freecodecamp.com/challenges/declare-javascript-objects-as-variables
-- https://www.freecodecamp.com/challenges/make-instances-of-objects-with-a-constructor-function
-- https://www.freecodecamp.com/challenges/make-unique-objects-by-passing-parameters-to-our-constructor
-- https://www.freecodecamp.com/challenges/make-object-properties-private
-
-
 And just for fun ... https://www.freecodecamp.com/challenges/sum-all-numbers-in-a-range
 
 ### :boom: Bonus homework :boom:

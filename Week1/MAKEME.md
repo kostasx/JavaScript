@@ -6,7 +6,11 @@
 
 1. Watch: [What is programming](https://www.khanacademy.org/computing/computer-programming/programming/intro-to-programming/v/programming-intro) Just watch the 2 min video, you do not have to do the entire JavaScript course (It could be useful later on though). 
 
-## Step 1: JavaScript
+## Step 1: **Some freeCodeCamp challenges (10 hours):**
+
+On freeCodeCamp.com please do the [Basic JavaScript](https://www.freecodecamp.org/map) exercises up and until the __"Shopping List"__ exercise (there are some topics we did not cover but you can do it).
+
+## Step 2: JavaScript
 
 > For all the following exercises create a new .js file. Try to find a proper name for each file or make a small comment about what it does inside for future reference
 
@@ -30,10 +34,6 @@ For example:
 
 
 6. If `x` equals 7, and the only other statement is `x = x % 3`, what would be the new value of `x`?
-
-### Step 2: **Some freeCodeCamp challenges (10 hours):**
-
-On freeCodeCamp.com please do the [Basic JavaScript](https://www.freecodecamp.org/map) exercises up and until the __"Shopping List"__ exercise (there are some topics we did not cover but you can do it).
 
 ### How to hand in Homework:
 ```
