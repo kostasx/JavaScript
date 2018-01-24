@@ -2,7 +2,7 @@
 
 ## Before you start with the homework:
 
-1. Watch: [What is programming](https://www.khanacademy.org/computing/computer-programming/programming/intro-to-programming/v/programming-intro) Just watch the 2 min video, you do not have to do the entire JavaScript course (It could be useful later on though). 
+1. Watch: [What is programming](https://www.khanacademy.org/computing/computer-programming/programming/intro-to-programming/v/programming-intro) Just watch the 2 min video, __you do not__ have to do the entire JavaScript course (It could be useful later on though). 
 
 ## Step 1: **Some freeCodeCamp challenges (10 hours):**
 
