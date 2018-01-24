@@ -38,7 +38,7 @@ For example:
 ### How to hand in Homework:
 ```
 How to hand in your homework:
-• Upload your homework in your "sha-javascript1" Github repository. Make sure to create a new folder "week2" first. 
-• Upload your homework files inside the week2 folder and write a description for this “commit”.
-• Your sha-javascript1/week2 should now contain all your homework files.
+• Upload your homework in your "sha-javascript1" Github repository. Make sure to create a new folder "week1" first. 
+• Upload your homework files inside the week1 folder and write a description for this “commit”.
+• Your sha-javascript1/week1 should now contain all your homework files.
 • Place the link to your repository folder in Trello.
