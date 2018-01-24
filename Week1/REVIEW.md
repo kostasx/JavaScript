@@ -223,6 +223,8 @@ More about [comparison operators](https://developer.mozilla.org/en-US/docs/Web/J
 
 More about [Arithmetic_Operators](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Arithmetic_Operators#.25_.28Modulus.29)
 
+More about [Operator Precedence](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Operator_Precedence)
+
 ### Logical operators
 
 * AND `&&`
@@ -238,7 +240,7 @@ x !== y // -> true
 
 More about [logical operators](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Logical_Operators)
 
-### Operator precedence
+### Compound assignment operators
 
 There are compound assignment operators such as +=. The following two assignments are equivalent:
 
