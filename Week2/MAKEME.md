@@ -12,7 +12,7 @@
 
 ## Step 2: **Some freeCodeCamp challenges (10 hours):**
 
-On freeCodeCamp.com please do the [Basic JavaScript](https://www.freecodecamp.org/map) exercises up and until the __"Shopping List"__ exercise (there are some topics we did not cover but you can do it).
+On freeCodeCamp.com please do the [Basic JavaScript](https://www.freecodecamp.org/map) exercises up and until the __"Iterate with JavaScript While Loops"__ exercise (there are some topics we did not cover but you can do it).
 
 ## Step 3: JavaScript
 > For all the following exercises create a new .js file. Try to find a proper name for each file or make a small comment about what it does inside for future reference
