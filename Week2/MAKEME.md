@@ -44,7 +44,7 @@ if (3 == 3) {
 
 9. Use the list of vehicles to write an advertisement. So that it prints something like: `"Amazing Joe's Garage, we service cars, motorbikes, caravans and bikes."`. (Hint: use a `for` loop.)
 
-10. What if you add one more vehicle to the list, can you have that added to the advertisement without changing the code for question 7?
+10. What if you add one more vehicle to the list, can you have that added to the advertisement without changing the code for question 9?
 
 11. Write some code to test two arrays for equality using `==` and `===`. Test the following:
     
