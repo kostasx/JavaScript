@@ -32,7 +32,9 @@ if (3 == 3) {
 }
 ```
 
-5. Create a function called `vehicle`, like before, but takes another parameter called age, so that `vehicle("blue", 1, 5)` prints "a blue used car"
+5. Create a function called `vehicle`, like before, but takes another parameter called age, so that 
+    `vehicle("blue", 1, 5)` prints "a blue used car".
+    `vehicle("blue", 1, 0)` prints "a blue new car".
 
 6. Make a list of vehicles, you can add `"motorbike"`, `"caravan"`, `"bike"`, or more.
 
