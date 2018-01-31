@@ -18,7 +18,7 @@ On freeCodeCamp.com please do the [Basic JavaScript](https://www.freecodecamp.or
 
 3. Create a array called `colors` with the strings red, green and blue inside.
 
-4. How can you find the length of the string you just created?
+4. How can you find the length of the object you just created?
 
 5. Write a program that checks the types of two variables and prints out `SAME TYPE` if they are the same type. 
 For example: 
