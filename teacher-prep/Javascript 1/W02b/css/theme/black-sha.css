@@ -264,6 +264,10 @@ body {
   border: 0;
   box-shadow: none; }
 
+.reveal a.black {
+  color: black;
+}
+
 .reveal a img {
   -webkit-transition: all .15s linear;
   -moz-transition: all .15s linear;
