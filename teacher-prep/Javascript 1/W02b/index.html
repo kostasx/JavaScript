@@ -555,6 +555,28 @@
 					</section>
 				</section>
 
+				<!-- SRC :: NAMING CONVENTIONS -->
+				<section>
+					<h2 class="colorful">Naming Conventions</h2>
+					<ul>
+						<li class="small">Variable names and object keys should be camel-cased</li>
+						<li class="small">Variables should use nouns as names, and functions should use verbs</li>
+						<li class="small">Variables with array values should use plural nouns, variables with object values should use singular nouns</li>
+						<li class="small">Variable and function names should preferably be short but expressive</li>
+					</ul>
+					<pre><code class="hljs" data-trim contenteditable>
+					const some_number = 'apple'; // BAD
+					const fruits = 'apple'; // BAD
+					const color = ['red', 'orange']; // BAD
+					const Xyz = 33; // BAD
+
+					const user = { // GOOD
+					    preferredFruits: ['apple', 'orange'],
+					    topFruit: 'apple'
+					}
+					</code></pre>
+				</section>
+
 				<!-- NESTED VERTICAL SLIDES -->
 				<!--
 				<section>
