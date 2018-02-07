@@ -382,8 +382,9 @@
 						</pre> 
 
 					</section>
-						<section>
-						<p>if { ... } else { ... }</p>
+
+					<section>
+						<p>NESTED if { ... } else { ... }</p>
 						<pre>
 							<code class="hljs" data-trim contenteditable>
 							let trafficLight = 'red';
@@ -401,7 +402,131 @@
 							}
 							</code>
 						</pre> 
+						<p><small class="colorful">This can be written like this...</small></p>
 
+					</section>
+
+					<section>
+						<p>if { ... } else if { ... }</p>
+						<pre>
+							<code class="hljs" data-trim contenteditable>
+							if ( trafficLight === 'red' ){
+
+							  console.log( "Stop the car!" );
+
+							} else if ( trafficLight === "orange" ){
+
+							    console.log( "Slow down!" );
+
+							} else if ( trafficLight === "green" ){
+
+							      console.log( "Move on." );
+
+							}
+							</code>
+						</pre> 
+					</section>
+
+				</section>
+
+				<!-- SRC :: OBJECTS -->
+				<section>
+					<section>
+						<h3 class="colorful">Objects</h3>
+						<h5>{ Advanced Data Structures }</h5>
+					</section>
+					<section>
+						<h5>Remember Arrays?</h5>
+						<pre>
+							<code class="hljs" data-trim contenteditable>
+							let arr = [ "Kosmas", "Kostas", "Chris" ]; 
+							console.log( arr[0] );
+							</code>
+						</pre>
+						<p><small>Under the hood, this works much like this:</small></p>
+						<pre>
+							<code class="hljs" data-trim contenteditable>
+								[ 0: "Kosmas", 1: "Kostas", 2: "Chris" ]
+							</code>
+						</pre>
+					</section>
+					<section>
+						<p>Declaring an Object:</p>
+						<pre>
+							<code class="hljs" data-trim contenteditable>
+							let obj = { teacher: "Kosmas", assistant: "Kostas", founder: "Chris" }
+							</code>
+						</pre>
+						<p><small>In Objects, instead of using a numeric index for each element,<br/>we explicitly define a key (String).</small></p>
+					</section>
+					<section>
+						<p>Accessing an Object Property:</p>
+						<pre><code class="hljs" data-trim contenteditable>
+						let obj = { teacher: "Kosmas", assistant: "Kostas", founder: "Chris" }
+
+						console.log( obj["teacher"] );
+						console.log( obj.assistant );
+						</code></pre>
+						<p class="fragment"><small>Will Output:</small></p>
+						<pre class="fragment"><code class="hljs">
+							"Kosmas"
+							"Kostas"
+						</code></pre>
+					</section>
+					<section>
+						<p>Setting an Object Property:</p>
+						<pre><code class="hljs" data-trim contenteditable>
+						let obj = { teacher: "Kosmas", assistant: "Kostas", founder: "Chris" }
+
+						obj.teacher = "Mary";
+
+						console.log( obj );
+						console.log( obj["teacher"] );
+						</code></pre>
+						<p class="fragment"><small>Will Output:</small></p>
+						<pre class="fragment"><code class="hljs">{ teacher: "Mary", assistant: "Kostas", founder: "Chris" }
+							"Mary"
+						</code></pre>
+					</section>
+					<section>
+						<p><small>When an Object Property contains a Function, it is called a <strong class="colorful">method</strong></small></p>
+						<pre>
+							<code class="hljs" data-trim contenteditable>
+							let car = {
+							  color: "red",
+							  year: 2010,
+							  type: "sports",
+							  showInfo: function(){
+							    console.log("A red sports car.");
+							  }
+							}
+							car.showInfo();
+							</code>
+						</pre>
+						<p><small>Will output:</small></p>
+						<pre><code class="hljs" data-trim>
+						"A red sports car."
+						</code></pre>
+					</section>
+					<section>
+						<p><small>You can access any Object property using the <strong class="colorful">this</strong> keyword, while inside the Object.</small></p>
+						<pre>
+							<code class="hljs" data-trim contenteditable>
+							let car = {
+							  color: "red",
+							  year: 2010,
+							  type: "sports",
+							  showInfo: function(){
+							    console.log("A " + this.color + " sports car.");
+							  }
+							}
+							car.showInfo();
+							</code>
+						</pre>
+						<p><small>Will output:</small></p>
+						<pre><code class="hljs" data-trim>
+						"A red sports car."
+						</code></pre>
 					</section>
 				</section>
 
@@ -437,6 +562,7 @@
 				<!-- B or . | Pause View -->
 
 				<!-- MARKDOWN -->
+				<!--
 				<section data-markdown>
 					<script type="text/template">
 						```javascript
@@ -446,32 +572,9 @@
 						```
 					</script>
 				</section>
-
-				<!-- FRAGMENTS -->
-				<!--
-				<section>
-					<section id="fragments">
-						<h2>Fragments</h2>
-						<p>Hit the next arrow...</p>
-						<p class="fragment">... to step through ...</p>
-						<p><span class="fragment">... a</span> <span class="fragment">fragmented</span> <span class="fragment">slide.</span></p>
-
-						<aside class="notes">
-							This slide has fragments which are also stepped through in the notes window.
-						</aside>
-					</section>
-					<section>
-						<h2>Fragment Styles</h2>
-						<p>There's different types of fragments, like:</p>
-						<p class="fragment grow">grow</p>
-						<p class="fragment shrink">shrink</p>
-						<p class="fragment fade-out">fade-out</p>
-						<p class="fragment fade-up">fade-up (also down, left and right!)</p>
-						<p class="fragment current-visible">current-visible</p>
-						<p>Highlight <span class="fragment highlight-red">red</span> <span class="fragment highlight-blue">blue</span> <span class="fragment highlight-green">green</span></p>
-					</section>
-				</section>
 				-->
+
+				<!-- FRAGMENTS | class="fragment" -->
 
 				<!-- REF :: BACKGROUNDS -->
 				<!--
@@ -505,9 +608,12 @@
 				</section>
 				-->
 
+				<!-- BACKGROUND TRANSITION | LET'S CODE -->
+				<!--
 				<section data-transition="slide" data-background="#F7BE2C" data-background-transition="zoom">
 					<h2>LET'S CODE!</h2>
 				</section>
+				-->	
 
 				<!-- TABULAR TABLES -->
 				<!--
