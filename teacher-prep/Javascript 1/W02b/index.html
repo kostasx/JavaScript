@@ -305,13 +305,76 @@
 					</section>
 				</section>
 
+				<!-- SRC :: VAR, LET, CONST -->
+				<section>
+					<section>
+						<h2><strong class="colorful">Understanding Scope</strong></h2>
+						<h4>let, const, var</h4>
+					</section>
+					<section>
+						<p><small>Declaring a Function:</small></p>
+						<pre>
+							<code class="hljs" data-trim contenteditable>
+							function repeatCode( param, otherParam ){
+
+								console.log( param );
+								console.log( otherParam );
+
+							}
+							</code>
+						</pre> 
+						<p class="fragment"><small>Calling the Function:</small></p>
+						<pre class="fragment">
+							<code class="hljs" data-trim contenteditable>
+							repeatCode( "value for param", "value for otherParam" );
+							</code>
+						</pre> 
+
+						<p class="fragment"><small>Will output:</small></p>
+						<pre class="fragment">
+							<code class="hljs" data-trim contenteditable>
+							"value for param"
+							"value for otherParam"
+							</code>
+						</pre> 
+
+					</section>
+					<section>
+						<p><small>Declaring a Function (#2):</small></p>
+						<pre>
+							<code class="hljs" data-trim contenteditable>
+							function repeatCode( param, otherParam ){
+
+								console.log( param );
+								console.log( otherParam );
+
+							}
+							</code>
+						</pre> 
+						<p class="fragment"><small>Can be declared as:</small></p>
+						<pre class="fragment">
+							<code class="hljs" data-trim contenteditable>
+							let repeatCode = function( param, otherParam ){
+
+								console.log( param );
+								console.log( otherParam );
+
+							}
+
+							</code>
+						</pre> 
+
+
+					</section>
+				</section>
+
 				<!-- SRC :: typeof -->
 				<section>
 					<section>
 						<h2>The <strong class="colorful">typeof</strong> operator</h2>
 						<h3 class="greyed_out">(Recap)</h3>
 					</section>
-					<section>
+					<section data-state="evaluation">
 						<pre>
 							<code class="hljs" data-trim contenteditable>
 							typeof "Some Text";	//=> 'string'
@@ -741,6 +804,21 @@
 
 		<script>
 
+			/* SHA */
+			Reveal.configure({
+				keyboard: {
+					// Key: 'e'
+				    69: function(){
+				    	/*
+				    	IF NOT EXIST
+							<PRE>.insertAdjacentHTML('afterend', code);
+						EVALUATE 
+							eval( <PRE>.textContent )
+						*/
+				    }
+				  }
+			});
+
 			// More info https://github.com/hakimel/reveal.js#configuration
 			Reveal.initialize({
 				controls: true,
@@ -762,6 +840,10 @@
 				]
 			});
 
+			/* SHA */
+			Reveal.addEventListener( 'evaluation', function() {
+				console.log( 'Evaluation!' );
+			});
 		</script>
 
 	</body>
