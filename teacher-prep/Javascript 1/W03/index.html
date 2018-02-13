@@ -26,6 +26,10 @@
 
 			<div class="slides">
 
+				<!-- Alt+Click | Zoom -->
+				<!-- S | Speaker View -->
+				<!-- B or . | Pause View -->
+
 				<!-- INTRO -->
 				<section>
 					<h1>JavaScript</h1>
@@ -39,15 +43,67 @@
 				<section>
 					<h2>Recapping Week 02 Part II</h2>
 					<ul class="small">
-						<li>Recap Logical operators</li>
-						<li>Typeof</li>
-						<li>Loops (for/while)</li>
-						<li>Functions</li> 
-						<li class="greyed_out">Objects [Advanced data types]</li>  
-						<li class="greyed_out">Conditions</li>
-						<li class="greyed_out">Statements vs Expressions</li> 
-						<li class="greyed_out">Naming conventions</li>
+						<li>Objects</li>
+						<li>Conditions</li>
+						<li>Statements &amp; Expressions</li>
 					</ul>
+				</section>
+
+				<!-- SRC :: Objects -->
+				<section>
+					<section>
+						<h2><strong class="colorful">Objects</strong></h2>
+					</section>
+					<section>
+						<pre>
+							<code class="hljs" data-trim contenteditable>
+							while ( EXPRESSION ){
+
+								RUN CODE...
+
+							}
+							</code>
+						</pre> 
+						<p><small>While some <strong class="colorful">EXPRESSION</strong> evaluates to <strong>TRUE</strong> run the { code }</small></p>
+					</section>
+				</section>
+
+				<!-- SRC :: Conditions -->
+				<section>
+					<section>
+						<h2><strong class="colorful">Conditional</strong> Statements</h2>
+					</section>
+					<section>
+						<pre>
+							<code class="hljs" data-trim contenteditable>
+							while ( EXPRESSION ){
+
+								RUN CODE...
+
+							}
+							</code>
+						</pre> 
+						<p><small>While some <strong class="colorful">EXPRESSION</strong> evaluates to <strong>TRUE</strong> run the { code }</small></p>
+					</section>
+				</section>
+
+				<!-- SRC :: Statements & Expressions -->
+				<section>
+					<section>
+						<h2><strong class="colorful">Expressions</strong> &amp; <strong class="colorful">Statements</strong></h2>
+					</section>
+					<section>
+						<pre>
+							<code class="hljs" data-trim contenteditable>
+							while ( EXPRESSION ){
+
+								RUN CODE...
+
+							}
+							</code>
+						</pre> 
+						<p><small>While some <strong class="colorful">EXPRESSION</strong> evaluates to <strong>TRUE</strong> run the { code }</small></p>
+					</section>
 				</section>
 
 				<!-- SRC :: ToC -->
@@ -89,12 +145,84 @@
 					</section>
 				</section>
 
-				<!-- SRC :: Array Manipulation -->
+				<!-- SRC :: Array Manipulation :: Recapping -->
 				<section>
 					<section>
 						<h2>Manipulating <strong class="colorful">Arrays</strong></h2>
+						<h4>Recapping: <strong class="colorful">push</strong>, <strong class="colorful">pop</strong>, <strong class="colorful">shift</strong>, <strong class="colorful">unshift</strong></h4>
 					</section>
 					<section>
+
+						<small>Suggestion: Recap Array methods by going through a simple Todo App</small>
+
+						<small>We can display the number of tasks by using which Array property?
+						(Hint: Array is an Object with built-in properties. We can access an Object’s properties using the . notation. In this case we want the number of elements already on the list.)
+						(Answer: todo.length)
+						</small>
+
+						<pre>
+							<code class="hljs" data-trim contenteditable>
+							let todo = [ ];
+							( + ) Add Task --> todo.push( <TASK FROM INPUT> );
+							( + ) Add Task --> todo.push( <ANOTHER TASK> );
+	
+							( - ) Remove Task --> todo.shift() // We are using a serial Todo logic here. We add tasks that need to be done in a top-to-bottom priority order.
+
+							( + ) Add Important Task (High Priority) --> todo.unshift( <IMPORTANT TASK> );
+
+							</code>
+						</pre> 
+						<p><small>While some <strong class="colorful">EXPRESSION</strong> evaluates to <strong>TRUE</strong> run the { code }</small></p>
+					</section>
+					<section>
+						<p>Extra: Quick mention the new Array( 1, 2, 3 ); way of creating Arrays.</p>
+					</section>
+				</section>
+
+				<!-- SRC :: Array Manipulation -->
+				<section>
+
+					<section>
+						<h2>Manipulating <strong class="colorful">Arrays</strong></h2>
+					</section>
+
+					<!-- reverse() -->
+					<section>
+						<h3>Array<strong class="colorful">.reverse()</strong></h3>
+						<pre>
+							<code class="hljs" data-trim contenteditable>
+							let listOfNumbers = [ 1, 2, 3, 4, 5 ];
+							</code>
+						</pre> 
+						<pre class="fragment">
+							<code class="hljs" data-trim contenteditable>
+							listOfNumbers.reverse();
+							</code>
+						</pre> 
+
+						<pre class="fragment">
+							<code class="hljs" data-trim contenteditable>
+							console.log( listOfNumbers );
+							</code>
+						</pre> 
+
+						<p class="fragment"><small>Will output:</small></p>
+						<pre class="fragment">
+							<code class="hljs" data-trim contenteditable>
+							[ 5, 4, 3, 2, 1]
+							</code>
+						</pre> 
+
+						<p class="fragment"><small><strong class="colorful">WARNING: </strong> reverse() will <strong>mutate</strong> (change) the contents of the Array!</small></p>
+
+						<p class="fragment"><small><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/reverse">More on Array.prototype.reverse()</a></small></p>
+
+
+					</section>
+
+					<!-- sort() -->
+					<section>
+						<h3>Array<strong class="colorful">.sort()</strong></h3>
 						<pre>
 							<code class="hljs" data-trim contenteditable>
 							while ( EXPRESSION ){
@@ -106,6 +234,108 @@
 						</pre> 
 						<p><small>While some <strong class="colorful">EXPRESSION</strong> evaluates to <strong>TRUE</strong> run the { code }</small></p>
 					</section>
+
+					<!-- slice() -->
+					<section>
+						<h3>Array<strong class="colorful">.slice()</strong></h3>
+						<pre>
+							<code class="hljs" data-trim contenteditable>
+							while ( EXPRESSION ){
+
+								RUN CODE...
+
+							}
+							</code>
+						</pre> 
+						<p><small>While some <strong class="colorful">EXPRESSION</strong> evaluates to <strong>TRUE</strong> run the { code }</small></p>
+					</section>
+
+					<!-- slice() tip : clone an Array -->
+					<section>
+						<p>Tip: Using Array<strong class="colorful">.slice()</strong> to clone an Array</p>
+						<pre class="fragment">
+							<code class="hljs" data-trim contenteditable>let numbers = [ 1, 2, 3, 4 ];</code>
+						</pre> 
+						<pre class="fragment">
+							<code class="hljs" data-trim contenteditable>let reversedNumbers = numbers.slice();</code>
+						</pre> 
+						<pre class="fragment">
+							<code class="hljs" data-trim contenteditable>reversedNumbers.reverse();</code>
+						</pre> 
+						<pre class="fragment">
+							<code class="hljs" data-trim contenteditable>console.log( numbers );</code>
+						</pre> 
+						<pre class="fragment">
+							<code class="hljs" data-trim contenteditable>[ 1, 2, 3, 4 ]</code>
+						</pre> 
+						<pre class="fragment">
+							<code class="hljs" data-trim contenteditable>console.log( reversedNumbers );</code>
+						</pre> 
+						<pre class="fragment">
+							<code class="hljs" data-trim contenteditable>[ 4, 3, 2, 1 ]</code>
+						</pre> 
+					</section>
+
+					<!-- splice() -->
+					<section>
+						<h3>Array<strong class="colorful">.splice()</strong></h3>
+						<pre>
+							<code class="hljs" data-trim contenteditable>
+							while ( EXPRESSION ){
+
+								RUN CODE...
+
+							}
+							</code>
+						</pre> 
+						<p><small>While some <strong class="colorful">EXPRESSION</strong> evaluates to <strong>TRUE</strong> run the { code }</small></p>
+					</section>
+
+					<!-- map() -->
+					<section>
+						<h3>Array<strong class="colorful">.map()</strong></h3>
+						<pre>
+							<code class="hljs" data-trim contenteditable>
+							while ( EXPRESSION ){
+
+								RUN CODE...
+
+							}
+							</code>
+						</pre> 
+						<p><small>While some <strong class="colorful">EXPRESSION</strong> evaluates to <strong>TRUE</strong> run the { code }</small></p>
+					</section>
+
+					<!-- filter() -->
+					<section>
+						<h3>Array<strong class="colorful">.filter()</strong></h3>
+						<pre>
+							<code class="hljs" data-trim contenteditable>
+							while ( EXPRESSION ){
+
+								RUN CODE...
+
+							}
+							</code>
+						</pre> 
+						<p><small>While some <strong class="colorful">EXPRESSION</strong> evaluates to <strong>TRUE</strong> run the { code }</small></p>
+					</section>
+
+					<!-- reduce() -->
+					<section>
+						<h3>Array<strong class="colorful">.reduce()</strong></h3>
+						<pre>
+							<code class="hljs" data-trim contenteditable>
+							while ( EXPRESSION ){
+
+								RUN CODE...
+
+							}
+							</code>
+						</pre> 
+						<p><small>While some <strong class="colorful">EXPRESSION</strong> evaluates to <strong>TRUE</strong> run the { code }</small></p>
+					</section>
+
 				</section>
 
 				<!-- SRC :: Closures and 'this' -->
@@ -191,53 +421,7 @@
 					</section>
 				</section>
 
-				<!-- NESTED VERTICAL SLIDES -->
-				<!--
-				<section>
-					<section>
-						<h2>Vertical Slides</h2>
-						<p>Slides can be nested inside of each other.</p>
-						<p>Use the <em>Space</em> key to navigate through all slides.</p>
-						<br>
-						<a href="#" class="navigate-down">
-							<img width="178" height="238" data-src="https://s3.amazonaws.com/hakim-static/reveal-js/arrow.png" alt="Down arrow">
-						</a>
-					</section>
-					<section>
-						<h2>Basement Level 1</h2>
-						<p>Nested slides are useful for adding additional detail underneath a high level horizontal slide.</p>
-					</section>
-					<section>
-						<h2>Basement Level 2</h2>
-						<p>That's it, time to go back up.</p>
-						<br>
-						<a href="#/2">
-							<img width="178" height="238" data-src="https://s3.amazonaws.com/hakim-static/reveal-js/arrow.png" alt="Up arrow" style="transform: rotate(180deg); -webkit-transform: rotate(180deg);">
-						</a>
-					</section>
-				</section>
-				-->
-
-				<!-- Alt+Click | Zoom -->
-				<!-- S | Speaker View -->
-				<!-- B or . | Pause View -->
-
-				<!-- MARKDOWN -->
-				<!--
-				<section data-markdown>
-					<script type="text/template">
-						```javascript
-						function myFunc(alt,opt){
-							let ok = true;
-						}
-						```
-					</script>
-				</section>
-				-->
-
-				<!-- FRAGMENTS | class="fragment" -->
-
-				<!-- REF :: BACKGROUNDS -->
+				<!-- REF :: BACKGROUNDS + VIDEOS -->
 				<!--
 				<section>
 					<section data-background="#dddddd">
@@ -269,13 +453,6 @@
 				</section>
 				-->
 
-				<!-- BACKGROUND TRANSITION | LET'S CODE -->
-				<!--
-				<section data-transition="slide" data-background="#F7BE2C" data-background-transition="zoom">
-					<h2>LET'S CODE!</h2>
-				</section>
-				-->	
-
 				<!-- TABULAR TABLES -->
 				<!--
 				<section>
@@ -306,31 +483,6 @@
 							</tr>
 						</tbody>
 					</table>
-				</section>
-				-->
-
-				<!-- QUOTES -->
-				<!--
-				<section>
-					<h2>Clever Quotes</h2>
-					<p>
-						These guys come in two forms, inline: <q cite="http://searchservervirtualization.techtarget.com/definition/Our-Favorite-Technology-Quotations">The nice thing about standards is that there are so many to choose from</q> and block:
-					</p>
-					<blockquote cite="http://searchservervirtualization.techtarget.com/definition/Our-Favorite-Technology-Quotations">
-						&ldquo;For years there has been a theory that millions of monkeys typing at random on millions of typewriters would
-						reproduce the entire works of Shakespeare. The Internet has proven this theory to be untrue.&rdquo;
-					</blockquote>
-				</section>
-				-->
-
-				<!-- INNER LINKS -->
-				<!--
-				<section>
-					<h2>Intergalactic Interconnections</h2>
-					<p>
-						You can link between slides internally,
-						<a href="#/2/3">like this</a>.
-					</p>
 				</section>
 				-->
 
