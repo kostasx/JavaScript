@@ -116,7 +116,9 @@
 				<section>
 					<section>
 						<h2><strong class="colorful">Expressions</strong> &amp; <strong class="colorful">Statements</strong></h2>
+						<!--
 						<p><small>While some <strong class="colorful">EXPRESSION</strong> evaluates to <strong>TRUE</strong> run the { code }</small></p>
+					    -->
 					</section>
 				</section>
 
@@ -533,18 +535,27 @@
 					<!-- reduce() -->
 					<section>
 						<h3>Array<strong class="colorful">.reduce()</strong></h3>
+						<p><small>Goes through each element, runs a function and returns an accumulator.</small></p>
 						<pre>
 							<code class="hljs" data-trim contenteditable>
-							while ( EXPRESSION ){
+							let numbers = [ 12, 8, 10, 5, 5 ];
+							let sum = function( accumulator, currentValue ){
 
-								RUN CODE...
+							  accumulator = accumulator + currentValue;
+							  return accumulator;
 
 							}
+							numbers.reduce( sum, 0 );
 							</code>
 						</pre> 
-						<p><small>While some <strong class="colorful">EXPRESSION</strong> evaluates to <strong>TRUE</strong> run the { code }</small></p>
 					</section>
 
+				</section>
+
+				<!-- SRC :: ... EXERCISES -->
+				<section data-transition="slide" data-background="#F7BE2C" data-background-transition="zoom">
+					<h2>LET'S CODE!</h2>
+					<a class="black" target="_blank" href="https://codepen.io/kostasx/pen/NyaPjY?editors=0011">http://bit.ly/<strong>2HfsyjN</strong></a>
 				</section>
 
 				<!-- SRC :: Closures and 'this' -->
@@ -553,45 +564,60 @@
 						<h2><strong class="colorful">Closures</strong></h2>
 					</section>
 					<section>
+						<p><small></small></p>
 						<pre>
 							<code class="hljs" data-trim contenteditable>
-							while ( EXPRESSION ){
+							function parent(){
 
-								RUN CODE...
+							  let local = "value";
+
+							  let child = function(){
+
+							     let childVariable = "Some private thing";
+							    console.log( local );
+
+							  }
 
 							}
 							</code>
 						</pre> 
-						<p><small>While some <strong class="colorful">EXPRESSION</strong> evaluates to <strong>TRUE</strong> run the { code }</small></p>
-					</section>
-				</section>
-
-				<!-- SRC :: Basic DOM Manipulation -->
-				<section>
-					<section>
-						<h2>Basic <strong class="colorful">DOM</strong> Manipulation</h2>
-					</section>
-					<section>
-						<pre>
-							<code class="hljs" data-trim contenteditable>
-							while ( EXPRESSION ){
-
-								RUN CODE...
-
-							}
-							</code>
-						</pre> 
-						<p><small>While some <strong class="colorful">EXPRESSION</strong> evaluates to <strong>TRUE</strong> run the { code }</small></p>
+						<a target="_blank" href="https://2.bp.blogspot.com/-ce8JZu-2De8/VzIj3tYM1qI/AAAAAAAALFc/ve0ZprxQQoI4_3x0EidEaHDnEdx5S9ZCACLcB/s1600/closure.jpg">Closures #01</a>
+						<a target="_blank" href="http://csharpcorner.mindcrackerinc.netdna-cdn.com/UploadFile/82b980/closures-in-javascript/Images/call%20to%20closure%20function.jpg">Closures #02</a>
 					</section>
 				</section>
 
 				<!-- SRC :: ... EXERCISES -->
 				<section data-transition="slide" data-background="#F7BE2C" data-background-transition="zoom">
 					<h2>LET'S CODE!</h2>
-					<a class="black" href="https://codepen.io/KPouianou/pen/ZrGKqr?editors=0011">http://bit.ly/<strong>2siSKqw</strong></a>
+					<a class="black" target="_blank" href="https://codepen.io/KPouianou/pen/zRdggr?editors=0011">http://bit.ly/<strong>2GdzzAD</strong></a>
+				</section>
+
+				<!-- SRC :: Basic DOM Manipulation -->
+				<section>
+					<section>
+						<h2>Basic <strong class="colorful">DOM</strong> Manipulation</h2>
+						<p class="Dfragment">document<strong class="colorful">.createElement()</strong>;</p>
+						<p class="Dfragment">document<strong class="colorful">.getElementById()</strong>;</p>
+						<p class="Dfragment">document<strong class="colorful">.querySelector()</strong>;</p>
+					</section>
+					<section>
+						<p class="Dfragment">Node<strong class="colorful">.appendChild()</strong>;</p>
+						<p class="Dfragment">Node<strong class="colorful">.remove()</strong>;</p>
+						<p class="Dfragment">Node<strong class="colorful">.setAttribute( key, value )</strong>;</p>
+						<p class="Dfragment">Node<strong class="colorful">.style</strong></p>
+
+					</section>
+
+				</section>
+
+				<!-- SRC :: ... EXERCISES -->
+				<section data-transition="slide" data-background="#F7BE2C" data-background-transition="zoom">
+					<h2>LET'S CODE!</h2>
+					<a class="black" target="_blank" href="https://codepen.io/KPouianou/pen/KQXPvK?editors=0010">http://bit.ly/<strong>2GapioH</strong></a>
 				</section>
 
 				<!-- SRC :: Extras :: Hoisting -->
+				<!--
 				<section>
 					<section>
 						<h2><strong class="colorful">Hoisting</strong></h2>
@@ -609,8 +635,10 @@
 						<p><small>While some <strong class="colorful">EXPRESSION</strong> evaluates to <strong>TRUE</strong> run the { code }</small></p>
 					</section>
 				</section>
+				-->
 
 				<!-- SRC :: Extras :: Introduction to Arrow Functions -->
+				<!--
 				<section>
 					<section>
 						<h2><strong class="colorful">Arrow Functions</strong></h2>
@@ -629,6 +657,7 @@
 						<p><small>While some <strong class="colorful">EXPRESSION</strong> evaluates to <strong>TRUE</strong> run the { code }</small></p>
 					</section>
 				</section>
+				-->
 
 				<!-- REF :: BACKGROUNDS + VIDEOS -->
 				<!--
