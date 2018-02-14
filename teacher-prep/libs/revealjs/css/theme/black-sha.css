@@ -170,6 +170,10 @@ body {
   white-space: pre-line; /* SHA */
 }
 
+.reveal pre.small {
+  line-height: 0.8em;
+}
+
 .reveal code {
   font-family: monospace;
   text-transform: none; }
