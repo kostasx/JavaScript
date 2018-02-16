@@ -30,7 +30,7 @@ Your teachers have provided you with feedback in issues in Github.
 
 1. Open a new js file and start by declaring an array that contains 10 strings. These strings should be of book titles you have read (or made up) and be lowercase without spaces or special characters so that you can use these later as Id's. (Example: Harry Potter's - The Chamber of Secrets -> `harry_potter_chamber_secrets`). 
 
-2. Create a basic html file called index.html and use it to load the js file, confirm the console.log show the array. (This is for debugging and making sure everything is in order. Delete it later when you're done :))
+2. Create a basic html file called index.html and use it to load the js file, confirm the console.log() show the array. (This is for debugging and making sure everything is in order. You can delete the console.log() later when you're done :))
 
 3. Make a function (or functions) that generate a `ul` with `li` elements for each book ID in the array using a for loop. 
 
