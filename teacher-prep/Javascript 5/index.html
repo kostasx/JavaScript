@@ -1,0 +1,556 @@
+<!doctype html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+  <title>Javascript - Week 5</title>
+
+  <link rel="stylesheet" href="css/reveal.css">
+  <link rel="stylesheet" href="css/theme/night.css">
+
+  <!-- Theme used for syntax highlighting of code -->
+  <link rel="stylesheet" href="lib/css/zenburn.css">
+
+  <!-- Printing and PDF exports -->
+  <script>
+    var link = document.createElement('link');
+    link.rel = 'stylesheet';
+    link.type = 'text/css';
+    link.href = window.location.search.match(/print-pdf/gi) ? 'css/print/pdf.css' : 'css/print/paper.css';
+    document.getElementsByTagName('head')[0].appendChild(link);
+  </script>
+</head>
+
+<body>
+  <div class="reveal">
+    <div class="slides">
+
+      <section>
+        <h1>Week 5</h1>
+        <p>
+          <small>
+            Hi, I'm <a href="http://tsevdos.me">John Tsevdos</a> a front-end developer from Athens, Greece.
+          </small>
+          <small>
+            and, I'm <a href="">Nick Papacostas</a> a full-stack developer from New York, USA.
+          </small>
+        </p>
+      </section>
+
+      <section>
+        <section>
+          <h2>Agenda</h2>
+          <ul>
+            <li>Review JSON, Fetch, Events</li>
+            <li>Asynchronous vs. Synchronous</li>
+            <li>Callbacks</li>
+            <li>Promises</li>
+            <li>Putting it all together</li>
+          </ul>
+        </section>
+
+        <section>
+          <h2>Rules</h2>
+          <ul style='font-size: .8em'>
+            <li>Please don't afraid to interrupt me or ask me at any time!</li>
+            <li style='font-weight: bold;'>When I ask a question please WAIT for 5 seconds before answering. Give everyone time to think about it</li>
+            <li>Try to type as much as you can!</li>
+            <li>On hands-on sections before asking:
+              <ol>
+                <li>Struggle a bit</li>
+                <li>Then ask ;-)</li>
+              </ol>
+            </li>
+            <li>If you have LOTS of questions, try writing them down and asking a teacher later</li>
+          </ul>
+        </section>
+      </section>
+
+      <section>
+
+          <section>
+            <h2>Review</h2>
+            <ul>
+              <li>JSON</li>
+              <li>Fetch</li>
+              <li>Events</li>
+            </ul>
+          </section>
+          
+          <section>
+            <h2>What is JSON?</h2>
+          </section>
+          <section>
+            <h2>What is JSON?</h2>
+            <h4 style="color:lightgreen;">a data format</h4>
+          </section>
+
+          <section>
+            <h2>Why do we use it?</h2>
+          </section>
+
+          <section>
+            <h2>Why do we use it?</h2>
+            <ul style="color:lightgreen;">
+              <li>it's simple</li>
+              <li>very common on the web</li>
+            </ul>
+          </section>
+
+          <section>
+            <h2>JSON</h2>
+            <h4>Which of these is JSON?</h4>
+            <p style="color:lightgreen; font-weight: .5em;"> remember JSON is slightly different from Javascript Objects</p>
+<pre style='width: 50%; float: left;'><code>
+  {
+    "firstname": "John",
+    "lastname": "Tsevdos",
+    "age": 35,
+    "address": {
+      "city": "Athens",
+      "street": "my street",
+      "number": 12
+    }
+  }
+</code></pre>
+<pre style='width: 50%; float: right;'><code>
+  {
+    firstname: "John",
+    lastname: "Tsevdos",
+    age: 35,
+    address: {
+      city: "Athens",
+      street: "my street",
+      number: 12
+    }
+  }
+</code></pre>
+          </section>
+
+          <section>
+            <h2>JSON.parse</h2>
+            <h4>Takes a JSON string -> Returns a Javascript Object </h4>
+            <p><pre><code>JSON.parse("{"name":"nick","age":27}")</code></pre></p>
+          </section>
+
+          <section>
+            <h2>JSON.parse</h2>
+            <p><code>JSON.parse("{"name":"nick","age":27}")</code></p>
+<pre><code>
+  let a = JSON.parse("{"name":"nick","age":27}")
+  a
+  //{
+  //  name: "nick",
+  //  age: 27,
+  //}
+</code></pre>
+          </section>
+          
+          <section>
+            <h2>JSON.stringify</h2>
+            <h4>Takes a Javascript Object -> Returns a JSON string </h4>
+            <h4 style="color: lightgreen; font-weight: .5em">It's the reverse of JSON.parse </h4>
+
+            <p><code>JSON.stringify({name:"nick",age:27})</code></p>
+          </section>
+          <section>
+            <h2>JSON.stringify</h2>
+            <pre><code>JSON.stringify({name:"nick",age:27})</code></pre>
+            <pre><code>"{"name":"nick","age":27}"</code></pre>
+          </section>
+
+
+          <section>
+            <h2>fetch</h2>
+            <h3>What do we use fetch for?</h3>
+          </section>
+
+          <section>
+            <h2>fetch</h2>
+<pre><code>
+  fetch("api.openweathermap.org/data/2.5/weather?id=2172797")
+    .then(function(response) { return response.json() })
+</code></pre>
+
+          <p>https://openweathermap.org/current</p>
+          </section>
+
+
+          <section>
+            <h2>Events</h2>
+            <h3>What do we use events for?</h3>
+          </section>
+
+          <section>
+            <h3>How can we console.log when someone clicks the button?</h3>
+<pre><code>
+  <button id="my-button">my button</button>
+</code></pre>
+          <a href="https://codepen.io/NickPapacostas/pen/MQZzWY?editors=1010">Fork this codepen!</a>
+          </section>
+
+        </section>
+
+      <section>
+
+        <section>
+          <h2>Synchronous vs. Asynchronous</h2>
+          <ul>
+            <li>From the Greek σύγχρονος meaning "at the same time"</li>
+          </ul>
+        </section>
+
+        <section>
+          <div style="float:left; width: 49%;"> 
+            <h4>Synchronous</h4>
+            <ol>
+              <li>Blocking</li>
+              <li>The program stops and waits for something to finish</li>
+            </ol>
+          </div>
+          <div style="float:right; width: 49%;"> 
+            <h4>Asynchronous</h4>
+            <ol>
+              <li>Non-blocking</li>
+              <li>Used when we don't know for sure how long something will take</li>
+            </ol>
+          </div>
+        </section>
+
+        <section>
+          <h2>Synchronous vs. Asynchronous</h2>
+          <h5>What kind of situation might take a long time?</h5>
+        </section>
+
+        <section>
+          <h2>Synchronous vs. Asynchronous</h2>
+<pre><code>
+function first(){
+  console.log(1);
+}
+
+function second(){
+  console.log(2);
+}
+
+first();
+second();
+
+// 1
+// 2
+</code></pre>
+          
+        </section>
+        
+        <section>
+          <h2>Synchronous vs. Asynchronous</h2>
+          <h4 style="font-size: .5em;">setTimeout is the simplest way to write asynchronous JS</h4>
+
+<pre><code style="font-size: .8em; line-height: 1.0em;">
+function first(){
+  // console.log after 500 milliseconds
+  setTimeout( function(){
+    console.log(1);
+  }, 500 );
+}
+
+function second(){
+  console.log(2);
+}
+
+first();
+second();
+
+// 2
+// 1
+
+</code></pre>
+          
+        </section>
+
+        <section>
+          <h2>Synchronous vs. Asynchronous</h2>
+          <h5>How can we make these things happen in the right order?</h5>
+<pre style="width: 49%; float: left"><code style='font-size: .7em; line-height: 1em;'>
+function makeCoffee() {
+  fillCoffeeMaker() // takes 2  seconds
+  turnOnStove()     // takes 1 second
+  waitUntilReady() // takes 10 seconds
+  pourCoffee()  // takes 3 seconds
+}
+</code></pre>
+<pre style="width: 49%; float: right"><code style='font-size: .7em; line-height: 1em;'>
+function fillCoffeeMaker() {
+  console.log('filling coffee maker')
+}
+function turnOnStove() {
+  console.log('turning on the stove')
+}
+function waitUntilReady() {
+  console.log('waiting for the water to boil')
+}
+function pourCoffee() {
+  console.log('pouring the coffee')
+}
+</code></pre>          
+        <p>https://codepen.io/NickPapacostas/pen/yvGvQd</p>
+        </section>
+
+        <section>
+          <h2>Is fetch synchronous or asynchronous?</h2>
+<pre><code>
+fetch('https://google.com')
+  .then((response) => response.json())
+</code></pre>
+        </section>
+        <section>
+          <h2>AJAX</h2>
+          <p>A quick definition:</p>
+          <p>AJAX is when you make a request without refreshing the page</p>
+          <p>Fetch is an example of an AJAX request</p>
+        </section>
+      </section>
+
+      <section>
+        <section>
+          <h2>Callbacks</h2>
+          <ul>
+            <li>What they are</li>
+            <li>Why we use them</li>
+            <li>Example</li>
+          </ul>
+        </section>
+
+        <section>
+          <h2>Callbacks: what they are</h2>
+          <p>A function as an argument</p>
+<pre><code>
+function greeting(name) {
+  console.log('Hello ' + name);
+}
+
+// processUserInput takes a function as an argument 
+function processUserInput(callback) {
+  var name = prompt('Please enter your name.');
+
+  // we call the callback function when the prompt finishes
+  callback(name);
+}
+
+processUserInput(greeting);
+</code></pre>
+        </section>
+
+
+        <section>
+          <h2>Callbacks: why we use them</h2>
+          <p>allow us to make sure things happen in order</p>
+          <ul>
+            <li>similar to how we used setTimeout for asynchronous processing</li>
+            <li>instead of saying "in 500 milliseconds do X" we can say "whenever this finishes do X"</li>
+          </ul>
+        </section>
+        
+        <section>
+          <h2>Callbacks</h2>
+<pre><code>
+function processUserInput(callback) {
+  var name = prompt('Please enter your name.');
+  callback(name);
+}
+</code></pre>
+          <ul>
+            <li>Here the "prompt" function will return when the user hits enter</li>
+            <li>We only want to call the "callback" when the user has entered their</li>
+            <li>Often (not always) callbacks are called at the end of a function, once it has finished it's behavior</li>
+          </ul>
+        </section>
+
+        <section>
+          <h2>Callback example</h2>
+          <p>We've used them already!</p>
+          <p>forEach takes a function as an argument</p>
+<pre><code>
+a = ["a", "b", "c", "d"]
+
+a.forEach(function(letter){
+  console.log(letter)
+})
+</code></pre>
+        </section>
+
+        <section>
+          <h2>Callbacks</h2>
+<pre><code>
+a = ["a", "b", "c", "d"]
+
+function logLetter(letter) {
+  console.log(letter)
+}
+
+a.forEach(logLetter)
+</code></pre>
+        </section>
+
+        <section>
+          <h2>Callbacks</h2>
+          <h4>Define our own forEach</h4>
+<pre><code>
+a = ["a", "b", "c", "d"]
+
+function myForEach(array, callback) {
+  // don't use forEach
+  // hint: use a regular for loop
+}
+
+</code></pre>
+          <p> https://codepen.io/NickPapacostas/pen/wyRxYw?editors=1012# </p>
+        </section>
+
+        <section>
+          <h2>Callback Hell</h2>
+<pre><code>
+function getData(callback) {
+  const result = fetch('mysite.com') // we don't know how long this will take
+  callback(result) 
+}
+
+getData(function(x){
+    getMoreData(x, function(y){
+        getMoreData(y, function(z){ 
+            ...
+        });
+    });
+});
+</code></pre>
+        </section>
+      </section>
+
+
+      <section>
+        <section>
+          <h2>Promises</h2>
+          <h4>A way of working nicely with callbacks</h4>
+          <ul>
+            <li>The `Promise` type is always available (in new browsers)</li>
+            <li>wrap asynchronous commands so you can use `then()` and other helpful functions </li>
+          </ul>
+<pre><code style='font-size: .7em; line-height: 1em;'>
+let p = new Promise(reject, resolve) {
+  setTimeout(function() {
+    resolve("finished")
+  }, 1000)
+}
+
+p.then(function(result) {
+  console.log(result + " was the result")
+})
+</code></pre>
+        </section>
+
+        <section>
+          <h2>Promises</h2>
+          <h4>let's try and work promises into our coffee example</h4>
+
+<pre><code style="font-size: .7em; line-height: 1em;">
+function fillCoffeeMaker() {
+  return new Promise(function(resolve, reject) {
+    setTimeout(function() {
+      resolve("finished filling coffee maker")
+    }, 2000)
+  })
+}
+
+function makeCoffee() {
+  fillCoffeeMaker()
+    .then(turnOnStove)
+    .then(waitUntilReady)
+    .then(pourCoffee)
+}
+</code></pre>
+          <a href="https://codepen.io/NickPapacostas/pen/ddwgOM?editors=0012">Fork this Codepen</a>
+        </section>
+
+        <section>
+          <h2>Promises</h2>
+          <h4>Fetch uses promises!</h4>
+<pre><code style='font-size: .7em; line-height: 1em;'>
+
+fetch('https://google.com')
+  .then((response) => response.json())
+
+</code></pre>
+        </section>
+      </section>
+
+
+      <section>
+        <section>
+          <h2>Putting it all together</h2>
+          <h4>We've learned a lot recently!</h4>
+          <ul>
+            <li>DOM Manipulation</li>
+            <li>DOM Events</li>
+            <li>Callbacks and Promises</li>
+            <li>Getting data from other sources</li>
+          </ul>
+        </section>
+
+        <section>
+          <h2>Putting it all together</h2>
+          <h5>We can now start building sites that change with user interaction!</h5>
+          <h5>Let's discuss <a href="https://github.com/SocialHackersCodeSchool/JavaScript/blob/master/Week5/MAKEME.md#step-3-homework-for-javascript">part of the HW</a> for this week</h5>
+        </section>
+
+      <section>
+
+        <section>
+          <h2>Next week</h2>
+          <ul>
+            <li>Review</li>
+            <li>Movie Project!</li>
+          </ul>
+        </section>
+
+        <section>
+          <h2>Questions?</h2>
+        </section>
+
+      </section>
+
+    </div>
+  </div>
+
+  <script src="lib/js/head.min.js"></script>
+  <script src="js/reveal.js"></script>
+
+  <script>
+    // More info about config & dependencies:
+    // - https://github.com/hakimel/reveal.js#configuration
+    // - https://github.com/hakimel/reveal.js#dependencies
+    Reveal.initialize({
+      dependencies: [{
+          src: 'plugin/markdown/marked.js'
+        },
+        {
+          src: 'plugin/markdown/markdown.js'
+        },
+        {
+          src: 'plugin/notes/notes.js',
+          async: true
+        },
+        {
+          src: 'plugin/highlight/highlight.js',
+          async: true,
+          callback: function () {
+            hljs.initHighlightingOnLoad();
+          }
+        }
+      ]
+    });
+  </script>
+</body>
+
+</html>
