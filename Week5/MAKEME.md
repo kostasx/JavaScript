@@ -44,11 +44,11 @@ All share a video or a resource (this can be a drawing, article or a pod cast) t
     ```
 
 
-2. Please solve this problem using:
+2. Please solve this problem:
 https://www.freecodecamp.com/challenges/repeat-a-string-repeat-a-string
- 1. A for loop
- 2. A while loop
- 3. A do loop
+ 1. Solve the problem using a for loop
+ 2. Solve the problem using a while loop
+ 3. Solve the problem using a do loop
 
 3. Some practice with objects 
 https://www.freecodecamp.com/challenges/construct-javascript-objects-with-functions
