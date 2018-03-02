@@ -46,9 +46,9 @@ All share a video or a resource (this can be a drawing, article or a pod cast) t
 
 2. Please solve this problem:
 https://www.freecodecamp.com/challenges/repeat-a-string-repeat-a-string
- 1. Solve the problem using a for loop
- 2. Solve the problem using a while loop
- 3. Solve the problem using a do loop
+ - Solve the problem using a for loop
+ - Solve the problem using a while loop
+ - Solve the problem using a do loop
 
 3. Some practice with objects 
 https://www.freecodecamp.com/challenges/construct-javascript-objects-with-functions
