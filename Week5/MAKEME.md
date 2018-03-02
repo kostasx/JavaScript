@@ -114,9 +114,9 @@ You can see `CommandLine` in the URL. These are called "query parameters" and le
 ```
 How to hand in your homework:
 • Clone your existing "sha-javascript2" Github repository.
-• Create a new folder "week2" USING THE COMMAND LINE 
+• Create a new folder "week2"
 • Save your homework files inside this folder. 
-• When you are done with your homework use add/commit and push to upload your homework. 
+• When you are done with your homework upload your homework to github. 
 • Write a description for your “commit”.
 • Your sha-javascript2/week2 should now contain all your homework files.
 Place the link to your repository folder in Trello.
