@@ -25,9 +25,9 @@ All share a video or a resource (this can be a drawing, article or a pod cast) t
 
     The function should generate an array containing values from start value to end value (inclusive). 
 
-    Then the function should iterate over the array and call the second argument if the array value is divisible by 3
+    Then the function should iterate over the array and call the third argument if the array value is divisible by 3
 
-    The function should call the second argument if the array value is divisible by 5 
+    The function should call the fourth argument if the array value is divisible by 5 
 
     Both functions should be called if the array value is divisible by both 3 and 5
 
