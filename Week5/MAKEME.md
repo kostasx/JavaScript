@@ -25,9 +25,9 @@ All share a video or a resource (this can be a drawing, article or a pod cast) t
 
     The function should generate an array containing values from start value to end value (inclusive). 
 
-    Then the function should iterate over the array and call the second argument if the array value is divisible by 3
+    Then the function should loop over the array and call the third argument if the array value is divisible by 3
 
-    The function should call the second argument if the array value is divisible by 5 
+    The function should call the fourth argument if the array value is divisible by 5 
 
     Both functions should be called if the array value is divisible by both 3 and 5
 
@@ -44,11 +44,11 @@ All share a video or a resource (this can be a drawing, article or a pod cast) t
     ```
 
 
-2. Please solve this problem using:
+2. Please solve this problem:
 https://www.freecodecamp.com/challenges/repeat-a-string-repeat-a-string
- 1. A for loop
- 2. A while loop
- 3. A do loop
+ - Solve the problem using a for loop
+ - Solve the problem using a while loop
+ - Solve the problem using a do loop
 
 3. Some practice with objects 
 https://www.freecodecamp.com/challenges/construct-javascript-objects-with-functions
@@ -114,9 +114,9 @@ You can see `CommandLine` in the URL. These are called "query parameters" and le
 ```
 How to hand in your homework:
 • Clone your existing "sha-javascript2" Github repository.
-• Create a new folder "week2" USING THE COMMAND LINE 
+• Create a new folder "week2"
 • Save your homework files inside this folder. 
-• When you are done with your homework use add/commit and push to upload your homework. 
+• When you are done with your homework upload your homework to github. 
 • Write a description for your “commit”.
 • Your sha-javascript2/week2 should now contain all your homework files.
 Place the link to your repository folder in Trello.

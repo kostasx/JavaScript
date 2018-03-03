@@ -59,6 +59,7 @@ Have a look at the below resources, courses and videos
 ## DOM Manipulation and Events
 * [Introduction to the DOM](https://developer.mozilla.org/en-US/docs/Web/API/Document_Object_Model/Introduction)
 * [The Basics of DOM Manipulation in Vanilla JavaScript](https://www.sitepoint.com/dom-manipulation-vanilla-javascript-no-jquery/)
+* [JavaScript DOM Tutorial (YouTube Playlist)](https://www.youtube.com/playlist?list=PL4cUxeGkcC9gfoKa5la9dsdCNpuey2s-V)
 * [Introduction to events](https://developer.mozilla.org/en-US/docs/Learn/JavaScript/Building_blocks/Events)
 * [Event reference](https://developer.mozilla.org/en-US/docs/Web/Events)
 * [Javascript Events Tutorial (Youtube video)](https://www.youtube.com/watch?v=e57ReoUn6kM)
