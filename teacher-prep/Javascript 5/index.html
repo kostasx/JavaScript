@@ -7,18 +7,18 @@
 
   <title>Javascript - Week 5</title>
 
-  <link rel="stylesheet" href="css/reveal.css">
-  <link rel="stylesheet" href="css/theme/night.css">
+  <link rel="stylesheet" href="../libs/revealjs/css/reveal.css">
+  <link rel="stylesheet" href="../libs/revealjs/css/theme/night.css">
 
   <!-- Theme used for syntax highlighting of code -->
-  <link rel="stylesheet" href="lib/css/zenburn.css">
+  <link rel="stylesheet" href="../libs/revealjs/lib/css/zenburn.css">
 
   <!-- Printing and PDF exports -->
   <script>
     var link = document.createElement('link');
     link.rel = 'stylesheet';
     link.type = 'text/css';
-    link.href = window.location.search.match(/print-pdf/gi) ? 'css/print/pdf.css' : 'css/print/paper.css';
+    link.href = window.location.search.match(/print-pdf/gi) ? '../libs/revealjs/css/print/pdf.css' : '../libs/revealjs/css/print/paper.css';
     document.getElementsByTagName('head')[0].appendChild(link);
   </script>
 </head>
@@ -81,21 +81,14 @@
           
           <section>
             <h2>What is JSON?</h2>
-          </section>
-          <section>
-            <h2>What is JSON?</h2>
-            <h4 style="color:lightgreen;">a data format</h4>
-          </section>
-
-          <section>
-            <h2>Why do we use it?</h2>
+            <h4 style="color:lightgreen;" class="fragment">a data format</h4>
           </section>
 
           <section>
             <h2>Why do we use it?</h2>
             <ul style="color:lightgreen;">
-              <li>it's simple</li>
-              <li>very common on the web</li>
+              <li class="fragment">it's simple</li>
+              <li class="fragment">very common on the web</li>
             </ul>
           </section>
 
@@ -523,26 +516,31 @@ fetch('https://google.com')
     </div>
   </div>
 
-  <script src="lib/js/head.min.js"></script>
-  <script src="js/reveal.js"></script>
-
+  <script src="../libs/revealjs/lib/js/head.min.js"></script>
+  <script src="../libs/revealjs/js/reveal.js"></script>
   <script>
     // More info about config & dependencies:
     // - https://github.com/hakimel/reveal.js#configuration
     // - https://github.com/hakimel/reveal.js#dependencies
     Reveal.initialize({
+
+      controls: true,
+      progress: true,
+      history: true,
+      center: true,
+
       dependencies: [{
-          src: 'plugin/markdown/marked.js'
+          src: '../libs/revealjs/plugin/markdown/marked.js'
         },
         {
-          src: 'plugin/markdown/markdown.js'
+          src: '../libs/revealjs/plugin/markdown/markdown.js'
         },
         {
-          src: 'plugin/notes/notes.js',
+          src: '../libs/revealjs/plugin/notes/notes.js',
           async: true
         },
         {
-          src: 'plugin/highlight/highlight.js',
+          src: '../libs/revealjs/plugin/highlight/highlight.js',
           async: true,
           callback: function () {
             hljs.initHighlightingOnLoad();
@@ -551,6 +549,7 @@ fetch('https://google.com')
       ]
     });
   </script>
+
 </body>
 
 </html>
