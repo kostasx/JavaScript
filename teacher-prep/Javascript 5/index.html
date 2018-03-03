@@ -7,18 +7,18 @@
 
   <title>Javascript - Week 5</title>
 
-  <link rel="stylesheet" href="css/reveal.css">
-  <link rel="stylesheet" href="css/theme/night.css">
+  <link rel="stylesheet" href="../libs/revealjs/css/reveal.css">
+  <link rel="stylesheet" href="../libs/revealjs/css/theme/night.css">
 
   <!-- Theme used for syntax highlighting of code -->
-  <link rel="stylesheet" href="lib/css/zenburn.css">
+  <link rel="stylesheet" href="../libs/revealjs/lib/css/zenburn.css">
 
   <!-- Printing and PDF exports -->
   <script>
     var link = document.createElement('link');
     link.rel = 'stylesheet';
     link.type = 'text/css';
-    link.href = window.location.search.match(/print-pdf/gi) ? 'css/print/pdf.css' : 'css/print/paper.css';
+    link.href = window.location.search.match(/print-pdf/gi) ? '../libs/revealjs/css/print/pdf.css' : '../libs/revealjs/css/print/paper.css';
     document.getElementsByTagName('head')[0].appendChild(link);
   </script>
 </head>
@@ -81,21 +81,14 @@
           
           <section>
             <h2>What is JSON?</h2>
-          </section>
-          <section>
-            <h2>What is JSON?</h2>
-            <h4 style="color:lightgreen;">a data format</h4>
-          </section>
-
-          <section>
-            <h2>Why do we use it?</h2>
+            <h4 style="color:lightgreen;" class="fragment">a data format</h4>
           </section>
 
           <section>
             <h2>Why do we use it?</h2>
             <ul style="color:lightgreen;">
-              <li>it's simple</li>
-              <li>very common on the web</li>
+              <li class="fragment">it's simple</li>
+              <li class="fragment">very common on the web</li>
             </ul>
           </section>
 
@@ -103,7 +96,7 @@
             <h2>JSON</h2>
             <h4>Which of these is JSON?</h4>
             <p style="color:lightgreen; font-weight: .5em;"> remember JSON is slightly different from Javascript Objects</p>
-<pre style='width: 50%; float: left;'><code>
+<pre style='width: 50%; float: left;'><code data-trim contenteditable>
   {
     "firstname": "John",
     "lastname": "Tsevdos",
@@ -115,7 +108,7 @@
     }
   }
 </code></pre>
-<pre style='width: 50%; float: right;'><code>
+<pre style='width: 50%; float: right;'><code data-trim contenteditable>
   {
     firstname: "John",
     lastname: "Tsevdos",
@@ -132,18 +125,18 @@
           <section>
             <h2>JSON.parse</h2>
             <h4>Takes a JSON string -> Returns a Javascript Object </h4>
-            <p><pre><code>JSON.parse("{"name":"nick","age":27}")</code></pre></p>
+            <p><pre><code data-trim contenteditable>JSON.parse(" {'name': 'nick','age': 27 }");</code></pre></p>
           </section>
 
           <section>
             <h2>JSON.parse</h2>
-            <p><code>JSON.parse("{"name":"nick","age":27}")</code></p>
-<pre><code>
-  let a = JSON.parse("{"name":"nick","age":27}")
+            <p><code data-trim contenteditable>JSON.parse("{'name':'nick','age':27}");</code></p>
+<pre><code data-trim contenteditable>
+  let a = JSON.parse("{'name':'nick','age':27}");
   a
   //{
   //  name: "nick",
-  //  age: 27,
+  //  age: 27
   //}
 </code></pre>
           </section>
@@ -153,12 +146,12 @@
             <h4>Takes a Javascript Object -> Returns a JSON string </h4>
             <h4 style="color: lightgreen; font-weight: .5em">It's the reverse of JSON.parse </h4>
 
-            <p><code>JSON.stringify({name:"nick",age:27})</code></p>
+            <p><code data-trim contenteditable>JSON.stringify({name:"nick",age:27});</code></p>
           </section>
           <section>
             <h2>JSON.stringify</h2>
-            <pre><code>JSON.stringify({name:"nick",age:27})</code></pre>
-            <pre><code>"{"name":"nick","age":27}"</code></pre>
+            <pre><code data-trim contenteditable>JSON.stringify({name:"nick",age:27});</code></pre>
+            <pre><code data-trim contenteditable>"{'name':'nick','age':27}"</code></pre>
           </section>
 
 
@@ -169,9 +162,9 @@
 
           <section>
             <h2>fetch</h2>
-<pre><code>
+<pre><code data-trim contenteditable>
   fetch("api.openweathermap.org/data/2.5/weather?id=2172797")
-    .then(function(response) { return response.json() })
+    .then(function(response) { return response.json(); })
 </code></pre>
 
           <p>https://openweathermap.org/current</p>
@@ -185,7 +178,7 @@
 
           <section>
             <h3>How can we console.log when someone clicks the button?</h3>
-<pre><code>
+<pre><code data-trim contenteditable>
   <button id="my-button">my button</button>
 </code></pre>
           <a href="https://codepen.io/NickPapacostas/pen/MQZzWY?editors=1010">Fork this codepen!</a>
@@ -226,7 +219,7 @@
 
         <section>
           <h2>Synchronous vs. Asynchronous</h2>
-<pre><code>
+<pre><code data-trim contenteditable>
 function first(){
   console.log(1);
 }
@@ -248,7 +241,7 @@ second();
           <h2>Synchronous vs. Asynchronous</h2>
           <h4 style="font-size: .5em;">setTimeout is the simplest way to write asynchronous JS</h4>
 
-<pre><code style="font-size: .8em; line-height: 1.0em;">
+<pre><code style="font-size: .8em; line-height: 1.0em;" data-trim contenteditable>
 function first(){
   // console.log after 500 milliseconds
   setTimeout( function(){
@@ -273,26 +266,26 @@ second();
         <section>
           <h2>Synchronous vs. Asynchronous</h2>
           <h5>How can we make these things happen in the right order?</h5>
-<pre style="width: 49%; float: left"><code style='font-size: .7em; line-height: 1em;'>
+<pre style="width: 49%; float: left"><code data-trim contenteditable style='font-size: .7em; line-height: 1em;'>
 function makeCoffee() {
   fillCoffeeMaker() // takes 2  seconds
   turnOnStove()     // takes 1 second
-  waitUntilReady() // takes 10 seconds
-  pourCoffee()  // takes 3 seconds
+  waitUntilReady()  // takes 10 seconds
+  pourCoffee()      // takes 3 seconds
 }
 </code></pre>
-<pre style="width: 49%; float: right"><code style='font-size: .7em; line-height: 1em;'>
+<pre style="width: 49%; float: right"><code data-trim contenteditable style='font-size: .7em; line-height: 1em;'>
 function fillCoffeeMaker() {
-  console.log('filling coffee maker')
+  console.log('filling coffee maker');
 }
 function turnOnStove() {
-  console.log('turning on the stove')
+  console.log('turning on the stove');
 }
 function waitUntilReady() {
-  console.log('waiting for the water to boil')
+  console.log('waiting for the water to boil');
 }
 function pourCoffee() {
-  console.log('pouring the coffee')
+  console.log('pouring the coffee');
 }
 </code></pre>          
         <p>https://codepen.io/NickPapacostas/pen/yvGvQd</p>
@@ -300,9 +293,9 @@ function pourCoffee() {
 
         <section>
           <h2>Is fetch synchronous or asynchronous?</h2>
-<pre><code>
+<pre><code data-trim contenteditable>
 fetch('https://google.com')
-  .then((response) => response.json())
+  .then((response) => response.json());
 </code></pre>
         </section>
         <section>
@@ -326,7 +319,7 @@ fetch('https://google.com')
         <section>
           <h2>Callbacks: what they are</h2>
           <p>A function as an argument</p>
-<pre><code>
+<pre><code data-trim contenteditable>
 function greeting(name) {
   console.log('Hello ' + name);
 }
@@ -355,7 +348,7 @@ processUserInput(greeting);
         
         <section>
           <h2>Callbacks</h2>
-<pre><code>
+<pre><code data-trim contenteditable>
 function processUserInput(callback) {
   var name = prompt('Please enter your name.');
   callback(name);
@@ -372,33 +365,33 @@ function processUserInput(callback) {
           <h2>Callback example</h2>
           <p>We've used them already!</p>
           <p>forEach takes a function as an argument</p>
-<pre><code>
-a = ["a", "b", "c", "d"]
+<pre><code data-trim contenteditable>
+a = ["a", "b", "c", "d"];
 
 a.forEach(function(letter){
-  console.log(letter)
+  console.log(letter);
 })
 </code></pre>
         </section>
 
         <section>
           <h2>Callbacks</h2>
-<pre><code>
-a = ["a", "b", "c", "d"]
+<pre><code data-trim contenteditable>
+a = ["a", "b", "c", "d"];
 
 function logLetter(letter) {
-  console.log(letter)
+  console.log(letter);
 }
 
-a.forEach(logLetter)
+a.forEach(logLetter);
 </code></pre>
         </section>
 
         <section>
           <h2>Callbacks</h2>
           <h4>Define our own forEach</h4>
-<pre><code>
-a = ["a", "b", "c", "d"]
+<pre><code data-trim contenteditable>
+a = ["a", "b", "c", "d"];
 
 function myForEach(array, callback) {
   // don't use forEach
@@ -411,10 +404,10 @@ function myForEach(array, callback) {
 
         <section>
           <h2>Callback Hell</h2>
-<pre><code>
+<pre><code data-trim contenteditable>
 function getData(callback) {
   const result = fetch('mysite.com') // we don't know how long this will take
-  callback(result) 
+  callback(result);
 }
 
 getData(function(x){
@@ -437,15 +430,15 @@ getData(function(x){
             <li>The `Promise` type is always available (in new browsers)</li>
             <li>wrap asynchronous commands so you can use `then()` and other helpful functions </li>
           </ul>
-<pre><code style='font-size: .7em; line-height: 1em;'>
+<pre><code data-trim contenteditable style='font-size: .7em; line-height: 1em;'>
 let p = new Promise(reject, resolve) {
   setTimeout(function() {
-    resolve("finished")
+    resolve("finished");
   }, 1000)
 }
 
 p.then(function(result) {
-  console.log(result + " was the result")
+  console.log(result + " was the result");
 })
 </code></pre>
         </section>
@@ -454,11 +447,11 @@ p.then(function(result) {
           <h2>Promises</h2>
           <h4>let's try and work promises into our coffee example</h4>
 
-<pre><code style="font-size: .7em; line-height: 1em;">
+<pre><code style="font-size: .7em; line-height: 1em;" data-trim contenteditable>
 function fillCoffeeMaker() {
   return new Promise(function(resolve, reject) {
     setTimeout(function() {
-      resolve("finished filling coffee maker")
+      resolve("finished filling coffee maker");
     }, 2000)
   })
 }
@@ -467,7 +460,7 @@ function makeCoffee() {
   fillCoffeeMaker()
     .then(turnOnStove)
     .then(waitUntilReady)
-    .then(pourCoffee)
+    .then(pourCoffee);
 }
 </code></pre>
           <a href="https://codepen.io/NickPapacostas/pen/ddwgOM?editors=0012">Fork this Codepen</a>
@@ -476,10 +469,10 @@ function makeCoffee() {
         <section>
           <h2>Promises</h2>
           <h4>Fetch uses promises!</h4>
-<pre><code style='font-size: .7em; line-height: 1em;'>
+<pre><code style='font-size: .7em; line-height: 1em;' data-trim contenteditable>
 
 fetch('https://google.com')
-  .then((response) => response.json())
+  .then((response) => response.json());
 
 </code></pre>
         </section>
@@ -523,26 +516,31 @@ fetch('https://google.com')
     </div>
   </div>
 
-  <script src="lib/js/head.min.js"></script>
-  <script src="js/reveal.js"></script>
-
+  <script src="../libs/revealjs/lib/js/head.min.js"></script>
+  <script src="../libs/revealjs/js/reveal.js"></script>
   <script>
     // More info about config & dependencies:
     // - https://github.com/hakimel/reveal.js#configuration
     // - https://github.com/hakimel/reveal.js#dependencies
     Reveal.initialize({
+
+      controls: true,
+      progress: true,
+      history: true,
+      center: true,
+
       dependencies: [{
-          src: 'plugin/markdown/marked.js'
+          src: '../libs/revealjs/plugin/markdown/marked.js'
         },
         {
-          src: 'plugin/markdown/markdown.js'
+          src: '../libs/revealjs/plugin/markdown/markdown.js'
         },
         {
-          src: 'plugin/notes/notes.js',
+          src: '../libs/revealjs/plugin/notes/notes.js',
           async: true
         },
         {
-          src: 'plugin/highlight/highlight.js',
+          src: '../libs/revealjs/plugin/highlight/highlight.js',
           async: true,
           callback: function () {
             hljs.initHighlightingOnLoad();
@@ -551,6 +549,7 @@ fetch('https://google.com')
       ]
     });
   </script>
+
 </body>
 
 </html>
