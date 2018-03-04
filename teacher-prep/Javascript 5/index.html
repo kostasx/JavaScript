@@ -425,21 +425,19 @@ getData(function(x){
       <section>
         <section>
           <h2>Promises</h2>
-          <h4>A way of working nicely with callbacks</h4>
-          <ul>
-            <li>The `Promise` type is always available (in new browsers)</li>
-            <li>wrap asynchronous commands so you can use `then()` and other helpful functions </li>
-          </ul>
-<pre><code data-trim contenteditable style='font-size: .7em; line-height: 1em;'>
-let p = new Promise(reject, resolve) {
+          <h4 style="color:lightgreen;" class="fragment">A way of working nicely with callbacks</h4>
+          <small class="fragment">The <strong>Promise</strong> type is always available (in new browsers)</small>
+          <small class="fragment">wrap asynchronous commands so you can use `then()` and other helpful functions</small>
+<pre><code class="fragment" data-trim contenteditable >
+let promise = new Promise(function(resolve, reject) {
   setTimeout(function() {
     resolve("finished");
   }, 1000)
-}
+});
 
-p.then(function(result) {
+promise.then(function(result) {
   console.log(result + " was the result");
-})
+});
 </code></pre>
         </section>
 
