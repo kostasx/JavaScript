@@ -1,0 +1,217 @@
+<!doctype html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+  <title>Javascript - Week 6</title>
+
+  <link rel="stylesheet" href="../libs/revealjs/css/reveal.css">
+  <link rel="stylesheet" href="../libs/revealjs/css/theme/night.css">
+
+  <!-- Theme used for syntax highlighting of code -->
+  <link rel="stylesheet" href="../libs/revealjs/lib/css/zenburn.css">
+
+  <!-- Printing and PDF exports -->
+  <script>
+    var link = document.createElement('link');
+    link.rel = 'stylesheet';
+    link.type = 'text/css';
+    link.href = window.location.search.match(/print-pdf/gi) ? '../libs/revealjs/css/print/pdf.css' : '../libs/revealjs/css/print/paper.css';
+    document.getElementsByTagName('head')[0].appendChild(link);
+  </script>
+</head>
+
+<body>
+  <div class="reveal">
+    <div class="slides">
+
+      <section>
+        <h1>Week 6</h1>
+        <p>
+          <small>
+            Hi, I'm <a href="http://tsevdos.me">John Tsevdos</a> a front-end developer from Athens, Greece.
+          </small>
+          <small>
+            and, I'm <a href="">Nick Papacostas</a> a full-stack developer from New York, USA.
+          </small>
+        </p>
+      </section>
+
+      <section>
+        <section>
+          <h2>Agenda</h2>
+          <ul>
+            <li>Review</li>
+            <li>Movie Project</li>
+          </ul>
+        </section>
+
+        <section>
+          <h2>Rules</h2>
+          <ul style='font-size: .8em'>
+            <li>Please don't afraid to interrupt me or ask me at any time!</li>
+            <li style='font-weight: bold;'>When I ask a question please WAIT for 5 seconds before answering. Give everyone time to think about it</li>
+            <li>Try to type as much as you can!</li>
+            <li>On hands-on sections before asking:
+              <ol>
+                <li>Struggle a bit</li>
+                <li>Then ask ;-)</li>
+              </ol>
+            </li>
+            <li>If you have LOTS of questions, try writing them down and asking a teacher later</li>
+          </ul>
+        </section>
+      </section>
+
+      <section>
+
+          <section>
+            <h2>Review</h2>
+            <ul>
+              <li>Async vs. Synchronous</li>
+              <li>Callbacks</li>
+              <li>Promises</li>
+            </ul>
+          </section>
+
+          <section>
+            <h2>Async vs. Sync</h2>
+            <ul>
+              <li>What does it mean if a function is "asynchronous"?</li>
+              <li>What is the difference between <pre><code>fetch</code></pre> and <pre><code>setTimeout</code></pre></li>
+            </ul>
+          </section>
+
+          <section>
+            <h2>Callbacks</h2>
+            <p>Why do we use callbacks?</p>
+<pre><code>
+function processUserInput(callback) {
+  var name = prompt('Please enter your name.');
+  callback(name);
+}
+
+processUserInput(function(theName) { console.log(theName) })
+</code></pre>
+          </section>
+
+          <section>
+            <h2>Callbacks</h2>
+            <p>How can we make a execute a callback <i>after</i> something finishes?</p>
+          </section>
+
+          <section>
+            <h2>Promises</h2>
+            <p>What are promises?</p>
+          </section>
+
+          <section>
+            <h2>Promises</h2>
+            <p>What are promises?</p>
+<pre><code style="font-size: .7em; line-height: 1em;">
+function fillCoffeeMaker() {
+  return new Promise(function(resolve, reject) {
+    setTimeout(function() {
+      resolve("finished filling coffee maker")
+    }, 2000)
+  })
+}
+
+function makeCoffee() {
+  fillCoffeeMaker()
+    .then(turnOnStove)
+    .then(waitUntilReady)
+    .then(pourCoffee)
+}
+</code></pre>
+          </section>
+
+          <section>
+            <h2>Promises</h2>
+
+            <p>How do we use them?</p>
+<pre><code style='font-size: .7em; line-height: 1em;'>
+fetch('https://google.com')
+  .then((response) => response.json())
+</code></pre>
+          </section>
+
+      </section>
+
+      <section>
+
+        <section>
+          <h2>Movie Project</h2>
+          <ul>
+            <li>Overview</li>
+            <li>Task Management</li>
+            <li>Get started</li>
+          </ul>
+        </section>
+
+        <section>
+          <h2>Overview</h2>
+          <p>quick demo</p>
+        </section>
+
+        <section>
+          <h2>Task Management</h2>
+          <p>We use tools (Trello, Pivotal Tracker, Jira) to see what we have completed and what is left to do</p>
+          <ol>
+            <li>Sign up for Tello (trello.com) </li>
+            <li>Go to my <a href="https://trello.com/b/pe6ysX7L">trello board</a> </li>
+            <li>Copy the board: click "show menu" -> "copy board" </li>
+            <li>We will move cards from "TODO" to "In Progress" to "Completed" </li>
+          </ol>
+        </section>
+      </section>
+
+      <section>
+
+        <section>
+          <h2>Questions?</h2>
+        </section>
+
+      </section>
+
+    </div>
+  </div>
+
+  <script src="../libs/revealjs/lib/js/head.min.js"></script>
+  <script src="../libs/revealjs/js/reveal.js"></script>
+
+  <script>
+    // More info about config & dependencies:
+    // - https://github.com/hakimel/reveal.js#configuration
+    // - https://github.com/hakimel/reveal.js#dependencies
+  
+    Reveal.initialize({
+      controls: true,
+      progress: true,
+      history: true,
+      center: true,
+      dependencies: [{
+          src: '../libs/revealjs/plugin/markdown/marked.js'
+        },
+        {
+          src: '../libs/revealjs/plugin/markdown/markdown.js'
+        },
+        {
+          src: '../libs/revealjs/plugin/notes/notes.js',
+          async: true
+        },
+        {
+          src: '../libs/revealjs/plugin/highlight/highlight.js',
+          async: true,
+          callback: function () {
+            hljs.initHighlightingOnLoad();
+          }
+        }
+      ]
+    });
+  </script>
+</body>
+
+</html>
