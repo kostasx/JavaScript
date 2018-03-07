@@ -186,19 +186,24 @@ fetch('https://google.com')
     // More info about config & dependencies:
     // - https://github.com/hakimel/reveal.js#configuration
     // - https://github.com/hakimel/reveal.js#dependencies
+  
     Reveal.initialize({
+      controls: true,
+      progress: true,
+      history: true,
+      center: true,
       dependencies: [{
-          src: 'plugin/markdown/marked.js'
+          src: '../libs/revealjs/plugin/markdown/marked.js'
         },
         {
-          src: 'plugin/markdown/markdown.js'
+          src: '../libs/revealjs/plugin/markdown/markdown.js'
         },
         {
-          src: 'plugin/notes/notes.js',
+          src: '../libs/revealjs/plugin/notes/notes.js',
           async: true
         },
         {
-          src: 'plugin/highlight/highlight.js',
+          src: '../libs/revealjs/plugin/highlight/highlight.js',
           async: true,
           callback: function () {
             hljs.initHighlightingOnLoad();
