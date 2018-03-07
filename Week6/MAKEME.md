@@ -4,12 +4,11 @@
 
 ### Step 1: Feedback
 
-Give feedback on `step 3` of `week 5` to one of your fellow students (do this by creating issues in Github). 
+Give feedback on `step 3` of `week 5` to one of your fellow students. You should comment on Trello to do this.
 
 ### Step 2: Fix issues and API
 
-- Fix the issues from the last week and make sure you explain how you fixed the issue in a comment (or commit message)
-<!-- - Write a script that [polls this API](https://sunrise-sunset.org/api) every 3 seconds and passes a new date every time where date is previous day ++. -->
+- You'll recieve feedback from one of our teachers. Make the changes and then continue to the next step.
 
 ### Step 3: SPA :sweat_drops:
 You are going to write a SPA (Single Page Application) that uses the [Github API](https://developer.github.com/guides/getting-started/). Make sure that your app uses a logical pattern just like [this codepen](http://codepen.io/Razpudding/pen/MmVpeW).
