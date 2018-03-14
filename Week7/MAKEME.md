@@ -116,7 +116,7 @@ let tasks = [monday, tuesday];
 
 ## _BONUS_ : Code Kata Race
 
-If you haven't already join our clan: "Hack Your Future" in codewars
+If you haven't already join our clan: "Social Hackers Academy" in codewars
 
 Solve the following problems:
 - [Problem 1](https://www.codewars.com/kata/keep-up-the-hoop)
