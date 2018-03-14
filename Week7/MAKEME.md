@@ -114,7 +114,7 @@ let tasks = [monday, tuesday];
 - Output a formatted Euro amount.
 - Don't forget to use `=>`
 
-_BONUS_ : Code Kata Race
+## _BONUS_ : Code Kata Race
 
 If you haven't already join our clan: "Hack Your Future" in codewars
 
