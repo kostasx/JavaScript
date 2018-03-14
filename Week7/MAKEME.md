@@ -17,7 +17,7 @@ Give feedback on the SPA (Github API) and git branching homework of one of you f
 <!-- - Add polling to your app so that it checks every minute or so if a new repo has been made and if it has, adds it to the DOM without reloading the page. -->
 - Add a readme to your repo explaining  what your app does and how to use your app. Here's a [template](https://gist.github.com/jxson/1784669) and here you can see how to make [your readme awesome](https://gist.github.com/rrgayhart/91bba7bb39ea60136e5c).
 
-### Step 4: **Some freeCodeCamp challenges:**
+## Step 4: **Some freeCodeCamp challenges:**
 
 1. [Comparisons with the Logical And Operator](https://www.freecodecamp.com/challenges/comparisons-with-the-logical-and-operator)
 
@@ -25,7 +25,7 @@ Give feedback on the SPA (Github API) and git branching homework of one of you f
 
 3. [Iterate over Arrays with map](https://www.freecodecamp.com/challenges/iterate-over-arrays-with-map)
 
-## Step 6: More map, filter, reduce, and =>
+## Step 5: More map, filter, reduce, and =>
 
 1. Say you would like to write a program that doubles the odd numbers in an array and throws away the even number.
 
