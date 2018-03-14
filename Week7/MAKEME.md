@@ -8,7 +8,7 @@ Give feedback on the SPA (Github API) and git branching homework of one of you f
 
 ## Step 2: Issues
 
-- Solve all your Git issues. DO NO CLOSE AN ISSUE WITHOUT AN EXPLANATION OR CODE COMMIT REFERENCING THAT ISSUE. 
+- Fix any feedback that you got from Week 5 or 6
 
 ## Step 3: map, filter, reduce
 
