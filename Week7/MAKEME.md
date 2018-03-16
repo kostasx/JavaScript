@@ -108,11 +108,11 @@ let tasks = [monday, tuesday];
 
     1. Collect two days' worth of tasks.
     2. Convert the task durations to hours, instead of minutes.
-    - Filter out everything that took two hours or more.
-    - Sum it all up.
-    - Multiply the result by a per-hour rate for billing (you can decide yourself what Maartje should make per hour).
-    - Output a formatted Euro amount.
-    - Don't forget to use `=>`
+    3. Filter out everything that took two hours or more.
+    4. Sum it all up.
+    5. Multiply the result by a per-hour rate for billing (you can decide yourself what Maartje should make per hour).
+    6. Output a formatted Euro amount.
+    7. Don't forget to use `=>`
 
 ## _BONUS_ : Code Kata Race
 
