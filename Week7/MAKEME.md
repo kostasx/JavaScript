@@ -116,6 +116,8 @@ let tasks = [monday, tuesday];
 
 ## _BONUS_ : Code Kata Race
 
+Join Code Wars: https://www.codewars.com
+
 If you haven't already join our clan: "Social Hackers Academy" in codewars
 
 Solve the following problems:
