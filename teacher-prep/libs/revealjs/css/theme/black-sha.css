@@ -262,7 +262,9 @@ body {
 
 .reveal section img.plain {
   border: 0;
-  box-shadow: none; }
+  background-color: transparent;
+  box-shadow: none; 
+}
 
 .reveal a.black {
   color: black;
