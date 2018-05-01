@@ -1,151 +1,162 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-	<meta charset="UTF-8">
-	<title>SHA | Module 01 Week 01</title>
-	<link href="https://fonts.googleapis.com/css?family=Lato:400,700,900" rel="stylesheet">
-	<style>
-		body {
-			font-family: 'Lato', sans-serif;
-			width: 100vw;
-			height: 100vh;
-			text-align: center;
-			background-color: #0d2334;			
-			padding: 0;
-			margin: 0;
-			overflow-x: hidden;
-		}
-		.arrow.hidden,
-		.arrow.hidden:hover {
-			opacity: 0;
-			cursor: auto;
-		}
-		.wrapper {
-			position: relative;
-		}
-		span.slide_num {
-			transition: opacity 400ms ease;
-			opacity: 1;
-			position: absolute;
-			top: 20px;
-			right: 20px;
-			padding: 10px;
-			background: rgba(255,255,255,0.7);
-			border-radius: 50%;
-			width: 30px;
-			height: 30px;
-			line-height: 28px;
-			font-size: 24px;
-			color: #000;
-		}
-		.slides {
-			width: auto;
-		    height: 99vh;
-		}
-		.arrow {
-		  position: absolute;
-		  top: 50%;
-		  width: 2rem;
-		  height: 2rem;
-		  background: transparent;
-		  border-top: .4rem solid white;
-		  border-right: .4rem solid white;
-		  box-shadow: 0 0 0 lightgray;
-		  -webkit-transition: all 200ms ease;
-		  transition: all 200ms ease;
-		  opacity: 0.1;
-		}
-		.arrow.left {
-		  left: 5%;
-		  -webkit-transform: translate3d(0, -50%, 0) rotate(-135deg);
-		          transform: translate3d(0, -50%, 0) rotate(-135deg);
-		}
-		.arrow.right {
-		  right: 5%;
-		  -webkit-transform: translate3d(0, -50%, 0) rotate(45deg);
-		          transform: translate3d(0, -50%, 0) rotate(45deg);
-		}
-		.arrow:hover {
-		  opacity: 1;
-		}
-	</style>
-</head>
-<body>
 
-<div class="wrapper">
-	<span class="slide_num">1</span>
-	<img class="slides" alt="">	
-	<a href="#" class="arrow left hidden"></a>
-	<a href="#" class="arrow right"></a>
-</div>
+	<head>
+		<meta charset="utf-8">
 
-<script>
-(function(){
+		<title>SHA | Module 01 Week 01</title>
+		<meta name="author" content="Kosmas Pouianou, Kostas Minaidis">
 
-	let currentSlide = 0;
-	let numSlides = 44;
-	let imgUrl = function(num){ return "images/M01W01S" + num.toString().padStart(2,'0') + ".svg"; } 
-	let direction;
-	let $slideNum = document.querySelector('.slide_num');
-	let $img = document.querySelector(".slides");
-		$img.src = imgUrl(currentSlide);
-	let $leftArrow = document.querySelector(".arrow.left");
-	let $rightArrow = document.querySelector(".arrow.right");
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
 
-	// PRELOAD SLIDES
-	for ( let i = numSlides; i > 0; i-- ) {
-		let slideImg  = document.createElement("img");
-    		slideImg.setAttribute( "src", imgUrl(i) );
-    		slideImg.style.display = "none";
-    		document.body.appendChild(slideImg);
-	}
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 
-	// SLIDER ARROW EVENT HANDLERS
+	  <link rel="stylesheet" href="../libs/revealjs/css/reveal.css">
+	  <link rel="stylesheet" href="../libs/revealjs/css/theme/black-sha.css" id="theme">
 
-	let slideRight = function(){
+		<!-- Theme used for syntax highlighting of code -->
+		<link rel="stylesheet" href="../libs/revealjs/lib/css/monokai-sublime-sha.css">
 
-		if ( currentSlide < numSlides ) {
-			currentSlide++;
-			if ( currentSlide === numSlides ) $rightArrow.classList.add('hidden');
-			$slideNum.textContent = currentSlide;
-			$img.src = imgUrl(currentSlide);
-			
-		}
-		if ( currentSlide > 1 ) $leftArrow.classList.remove('hidden');
-		return false;
-		
-	}
+		<style>
+			a.full-anchor {
+				position: fixed;
+				top     : -50%;
+				left    : -50%;
+				width   : 200vw;
+				height  : 200vh;
+				text-indent: -50000px;
+			}
+			.reveal .slide-background {
+			    background-size: contain;
+			}
+   		</style>
+	</head>
 
-	let slideLeft = function(){
+	<body>
 
-		if ( currentSlide > 1 ) {
-			currentSlide--;
-			if ( currentSlide === 1 ) $leftArrow.classList.add('hidden');
-			$slideNum.textContent = currentSlide;
-			$img.src = imgUrl(currentSlide);
-		}
-		if ( currentSlide < numSlides ) $rightArrow.classList.remove('hidden');
-		return false;
+		<div class="reveal">
 
-	}
+			<div class="slides">
 
-	$leftArrow.addEventListener("click", slideLeft);
+				<!-- Alt+Click | Zoom -->
+				<!-- S | Speaker View -->
+				<!-- B or . | Pause View -->
 
-	$rightArrow.addEventListener("click", slideRight);
+				<!-- INTRO -->
+				<section>
+					<h2>JavaScript | An Introduction</h2>
+					<h3 class="colorful">Module 01 | Week 01</h3>
+					<p>
+						<small>By <a href="https://github.com/kpouianou">Kosmas Pouianou</a> and <a href="https://github.com/kostasx">Kostas Minaidis</a></small>
+					</p>
+				</section>
 
-	let leftKeyCode  = 37;
-	let rightKeyCode = 39; 
+				<section data-background="images/M01W01S01.svg"></section>
+				<section data-background="images/M01W01S02.svg"></section>
+				<section data-background="images/M01W01S03.svg"></section>
+				<section data-background="images/M01W01S04.svg"></section>
+				<section data-background="images/M01W01S05.svg"></section>
+				<section data-background="images/M01W01S06.svg"></section>
+				<section data-background="images/M01W01S07.svg"></section>
+				<section data-background="images/M01W01S08.svg"></section>
+				<section data-background="images/M01W01S09.svg"></section>
+				<section data-background="images/M01W01S30.svg"></section>
 
-	document.addEventListener( "keydown", function(e){
+				<section data-background="images/M01W01S11.svg"></section>
+				<section data-background="images/M01W01S12.svg"></section>
+				<section data-background="images/M01W01S13.svg"></section>
+				<section data-background="images/M01W01S14.svg"></section>
+				<section data-background="images/M01W01S15.svg"></section>
+				<section data-background="images/M01W01S16.svg"></section>
+				<section data-background="images/M01W01S17.svg"></section>
+				<section data-background="images/M01W01S18.svg"></section>
+				<section data-background="images/M01W01S19.svg"></section>
+				<section data-background="images/M01W01S20.svg"></section>
 
-		console.log(e.keyCode);
-		if ( e.keyCode == leftKeyCode ){ return slideLeft(); }
-		if ( e.keyCode == rightKeyCode ){ return slideRight(); }
+				<section data-background="images/M01W01S21.svg"></section>
+				<section data-background="images/M01W01S22.svg"></section>
+				<section data-background="images/M01W01S23.svg"></section>
+				<section data-background="images/M01W01S24.svg"></section>
+				<section data-background="images/M01W01S25.svg"></section>
+				<section data-background="images/M01W01S26.svg"></section>
+				<section data-background="images/M01W01S27.svg"></section>
+				<section data-background="images/M01W01S28.svg"></section>
+				<section data-background="images/M01W01S29.svg"></section>
+				<section data-background="images/M01W01S30.svg"></section>
 
-	});
+				<section data-background="images/M01W01S31.svg">
+					<a class="full-anchor" target="_blank" href="https://codepen.io/kostasx/pen/opVQQg?editors=0010">LINK</a>
+				</section>
+				<section data-background="images/M01W01S32.svg"></section>
+				<section data-background="images/M01W01S33.svg"></section>
+				<section data-background="images/M01W01S34.svg"></section>
+				<section data-background="images/M01W01S35.svg">
+					<a class="full-anchor" target="_blank" href="https://codepen.io/kostasx/pen/QaoRZN">LINK</a>
+				</section>
+				<section data-background="images/M01W01S36.svg"></section>
+				<section data-background="images/M01W01S37.svg"></section>
+				<section data-background="images/M01W01S38.svg"></section>
+				<section data-background="images/M01W01S39.svg"></section>
+				<section data-background="images/M01W01S40.svg">
+					<a class="full-anchor" target="_blank" href="https://codepen.io/kostasx/pen/ppBGGb">LINK</a>
+				</section>
 
-}());
-	
-</script>	
-</body>
+				<section data-background="images/M01W01S41.svg"></section>
+				<section data-background="images/M01W01S42.svg"></section>
+				<section data-background="images/M01W01S43.svg"></section>
+				<section data-background="images/M01W01S44.svg"></section>
+
+			</div>
+
+		</div>
+
+		<script src="../libs/revealjs/lib/js/head.min.js"></script>
+		<script src="../libs/revealjs/js/reveal.js"></script>
+
+		<script>
+
+			/* SHA */
+			Reveal.configure({
+				keyboard: {
+					// Key: 'e'
+				    69: function(){
+				    	/*
+				    	IF NOT EXIST
+							<PRE>.insertAdjacentHTML('afterend', code);
+						EVALUATE 
+							eval( <PRE>.textContent )
+						*/
+				    }
+				  }
+			});
+
+			// More info https://github.com/hakimel/reveal.js#configuration
+			Reveal.initialize({
+				controls: true,
+				progress: true,
+				history: true,
+				center: true,
+
+				transition: 'slide', // none/fade/slide/convex/concave/zoom
+
+				// More info https://github.com/hakimel/reveal.js#dependencies
+				dependencies: [
+					{ src: '../libs/revealjs/lib/js/classList.js', condition: function() { return !document.body.classList; } },
+					{ src: '../libs/revealjs/plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: '../libs/revealjs/plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: '../libs/revealjs/plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
+					{ src: '../libs/revealjs/plugin/search/search.js', async: true },
+					{ src: '../libs/revealjs/plugin/zoom-js/zoom.js', async: true },
+					{ src: '../libs/revealjs/plugin/notes/notes.js', async: true }
+				]
+			});
+
+			/* SHA */
+			Reveal.addEventListener( 'evaluation', function() {
+				console.log( 'Evaluation!' );
+			});
+		</script>
+
+	</body>
 </html>
